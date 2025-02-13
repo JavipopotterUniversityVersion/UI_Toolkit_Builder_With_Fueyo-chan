@@ -1,0 +1,16 @@
+.pestanya {
+    height: 68px;
+}
+
+.pText {
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.item {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+}
