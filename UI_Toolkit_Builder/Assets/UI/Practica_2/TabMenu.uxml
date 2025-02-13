@@ -39,8 +39,11 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="Verde" style="flex-grow: 1; background-color: rgb(0, 255, 75); height: 393px; display: flex;">
+            <ui:VisualElement name="Verde" style="flex-grow: 1; background-color: rgb(0, 255, 75); height: 393px; display: flex; justify-content: space-around;">
                 <ui:Slider label="Slider" high-value="100" />
+                <ui:ProgressBar value="37" title="Progreso" />
+                <ui:ProgressBar value="2" title="Nivel" high-value="10" />
+                <ui:ProgressBar value="40" title="Exploración" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
