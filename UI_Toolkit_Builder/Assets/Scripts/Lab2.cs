@@ -43,6 +43,16 @@ public class Lab2 : MonoBehaviour
                 pc.cont.style.display = DisplayStyle.Flex;
             });
         }
+
+        VisualElement mslider = root.Q<Slider>("sorroco");
+        mslider.style.backgroundColor = Color.gray;
+
+        VisualElement mtracker = root.Q<VisualElement>("unity-tracker");
+        mtracker.style.backgroundColor = Color.yellow;
+
+        Label sliderText = mslider.Q<Label>("Label");
+        sliderText.text = @"<color=""FF00FF"">Dificultad</color>";
+        sliderText.style.fontSize = 16;
     }
 
     void NoContenido()

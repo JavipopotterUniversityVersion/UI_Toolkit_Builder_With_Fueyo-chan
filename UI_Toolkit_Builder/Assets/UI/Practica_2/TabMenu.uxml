@@ -17,18 +17,18 @@
                 <ui:VisualElement name="Column" style="flex-grow: 1; margin-top: 28px; margin-right: 28px; margin-bottom: 28px; margin-left: 28px; background-color: rgba(43, 55, 84, 0.67);">
                     <ui:VisualElement name="Line" style="flex-grow: 1; flex-direction: row;">
                         <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/05_apple_pie.png?fileID=21300000&amp;guid=8fbb96ff60e69ef4eb99d63fbf1d5c5b&amp;type=3#05_apple_pie&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/07_bread.png?fileID=21300000&amp;guid=7a1a6829b237e55438846bd7111be4f9&amp;type=3#07_bread&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/21_bagel_dish.png?fileID=21300000&amp;guid=5895818468ae67f4783534ed8c2a9412&amp;type=3#21_bagel_dish&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/07_bread.png?fileID=21300000&amp;guid=7a1a6829b237e55438846bd7111be4f9&amp;type=3#07_bread&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/21_bagel_dish.png?fileID=21300000&amp;guid=5895818468ae67f4783534ed8c2a9412&amp;type=3#21_bagel_dish&quot;); background-color: rgba(0, 0, 0, 0.64);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Line" style="flex-grow: 1; flex-direction: row;">
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/26_chocolate.png?fileID=21300000&amp;guid=00142a8ec730ee34983e5ff46cdea030&amp;type=3#26_chocolate&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/36_dumplings.png?fileID=21300000&amp;guid=75e3155e3aad0b549aa9da8eb2a3cf0f&amp;type=3#36_dumplings&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/40_eggsalad.png?fileID=21300000&amp;guid=fade9af10c72ba44fbebd56791b56a39&amp;type=3#40_eggsalad&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/26_chocolate.png?fileID=21300000&amp;guid=00142a8ec730ee34983e5ff46cdea030&amp;type=3#26_chocolate&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/36_dumplings.png?fileID=21300000&amp;guid=75e3155e3aad0b549aa9da8eb2a3cf0f&amp;type=3#36_dumplings&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/40_eggsalad.png?fileID=21300000&amp;guid=fade9af10c72ba44fbebd56791b56a39&amp;type=3#40_eggsalad&quot;); background-color: rgba(0, 0, 0, 0.64);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Line" style="flex-grow: 1; flex-direction: row;">
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/50_giantgummybear.png?fileID=21300000&amp;guid=3b6e8c5f5b1efbf489ae8b437034f6db&amp;type=3#50_giantgummybear&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/52_gingerbreadman.png?fileID=21300000&amp;guid=59c61a61cbfb537448a5fee29b3228e5&amp;type=3#52_gingerbreadman&quot;); background-color: rgba(0, 0, 0, 0.64);" />
-                        <ui:VisualElement name="Item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/63_lemonpie.png?fileID=21300000&amp;guid=7fb524206f3bd9243b7132fa5ee22d89&amp;type=3#63_lemonpie&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/50_giantgummybear.png?fileID=21300000&amp;guid=3b6e8c5f5b1efbf489ae8b437034f6db&amp;type=3#50_giantgummybear&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/52_gingerbreadman.png?fileID=21300000&amp;guid=59c61a61cbfb537448a5fee29b3228e5&amp;type=3#52_gingerbreadman&quot;); background-color: rgba(0, 0, 0, 0.64);" />
+                        <ui:VisualElement name="Item" class="item" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/63_lemonpie.png?fileID=21300000&amp;guid=7fb524206f3bd9243b7132fa5ee22d89&amp;type=3#63_lemonpie&quot;); background-color: rgba(0, 0, 0, 0.64);" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
@@ -40,7 +40,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Verde" style="flex-grow: 1; background-color: rgb(0, 255, 75); height: 393px; display: flex; justify-content: space-around;">
-                <ui:Slider label="Slider" high-value="100" />
+                <ui:Slider label="Dificultad" high-value="4" name="sorroco" />
                 <ui:ProgressBar value="37" title="Progreso" />
                 <ui:ProgressBar value="2" title="Nivel" high-value="10" />
                 <ui:ProgressBar value="40" title="Exploración" />
