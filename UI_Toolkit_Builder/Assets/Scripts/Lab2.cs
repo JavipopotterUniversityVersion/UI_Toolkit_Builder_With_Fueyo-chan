@@ -22,12 +22,18 @@ public class Lab2 : MonoBehaviour
         VisualElement contenido = root.Q<VisualElement>("Contenido");
 
         lista_pc[0].pest = pestanyas.Q<VisualElement>("Azul");
+        Label texto = lista_pc[0].pest.Q<Label>("Texto");
+        texto.text = @"<rotate=""2"">Inventario</rotate>";
         lista_pc[0].cont = contenido.Q<VisualElement>("Azul");
 
         lista_pc[1].pest = pestanyas.Q<VisualElement>("Rojo");
+        texto = lista_pc[1].pest.Q<Label>("Texto");
+        texto.text = @"<b><gradient=""Fueyo"">Mejoras</gradient></b>";
         lista_pc[1].cont = contenido.Q<VisualElement>("Rojo");
 
         lista_pc[2].pest = pestanyas.Q<VisualElement>("Verde");
+        texto = lista_pc[2].pest.Q<Label>("Texto");
+        texto.text = @"Estadísticas";
         lista_pc[2].cont = contenido.Q<VisualElement>("Verde");
 
         foreach (PestCont pc in lista_pc)

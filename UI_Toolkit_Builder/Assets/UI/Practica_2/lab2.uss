@@ -6,6 +6,7 @@
     -unity-text-align: middle-center;
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
+    font-size: 19px;
 }
 
 .item {

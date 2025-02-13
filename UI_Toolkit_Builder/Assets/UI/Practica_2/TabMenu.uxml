@@ -3,13 +3,13 @@
     <ui:VisualElement name="Contenedor" style="flex-grow: 1;">
         <ui:VisualElement name="Pestanyas" style="flex-grow: 1; flex-direction: row;">
             <ui:VisualElement name="Azul" class="pestanya" style="flex-grow: 1; background-color: rgb(0, 135, 255);">
-                <ui:Label tabindex="-1" text="Inventario" parse-escape-sequences="true" display-tooltip-when-elided="true" class="pText" style="height: 56px;" />
+                <ui:Label tabindex="-1" text="Inventario" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Texto" class="pText" style="height: 56px;" />
             </ui:VisualElement>
             <ui:VisualElement name="Rojo" class="pestanya" style="flex-grow: 1; background-color: rgb(255, 0, 0);">
-                <ui:Label tabindex="-1" text="Mejoras" parse-escape-sequences="true" display-tooltip-when-elided="true" class="pText" style="height: 56px;" />
+                <ui:Label tabindex="-1" text="Mejoras" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Texto" class="pText" style="height: 56px;" />
             </ui:VisualElement>
             <ui:VisualElement name="Verde" class="pestanya" style="flex-grow: 1; background-color: rgb(0, 255, 75);">
-                <ui:Label tabindex="-1" text="Estadísticas" parse-escape-sequences="true" display-tooltip-when-elided="true" class="pText" style="height: 56px;" />
+                <ui:Label tabindex="-1" text="Estadísticas" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Texto" class="pText" style="height: 56px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Contenido" style="flex-grow: 1;">
