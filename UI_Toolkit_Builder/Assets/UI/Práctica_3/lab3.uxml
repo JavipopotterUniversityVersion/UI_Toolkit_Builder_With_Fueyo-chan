@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Pr%C3%A1ctica_3/lab3.uss?fileID=7433441132597879392&amp;guid=e8a8de578593a634d9ccab04bc1a35cf&amp;type=3#lab3" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+        <ui:VisualElement name="Row" class="row" style="flex-grow: 1;">
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Row" class="row" style="flex-grow: 1;">
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Row" class="row" style="flex-grow: 1;">
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+            <ui:VisualElement name="Elem" class="elem" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
