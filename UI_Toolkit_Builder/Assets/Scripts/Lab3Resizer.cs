@@ -13,7 +13,7 @@ public class Lab3Resizer : PointerManipulator
     public Lab3Resizer()
     {
         m_PointerId = 1;
-        activators.Add(new ManipulatorActivationFilter { button = UnityEngine.UIElements.MouseButton.LeftMouse});
+        activators.Add(new ManipulatorActivationFilter { button = UnityEngine.UIElements.MouseButton.MiddleMouse});
         m_Active = false;
     }
 
