@@ -13,21 +13,22 @@ public class Lab3Resizer : PointerManipulator
     public Lab3Resizer()
     {
         m_PointerId = 1;
-        activators.Add(new ManipulatorActivationFilter { button = UnityEngine.UIElements.MouseButton.MiddleMouse});
+        activators.Add(new ManipulatorActivationFilter { button = UnityEngine.UIElements.MouseButton.LeftMouse});
         m_Active = false;
     }
 
     protected override void RegisterCallbacksOnTarget()
     {
         target.RegisterCallback<PointerDownEvent>(OnPointerDown);
-        target.RegisterCallback<PointerMoveEvent>(OnPointerMove);
+        // target.RegisterCallback<PointerMoveEvent>(OnPointerMove);
         target.RegisterCallback<PointerUpEvent>(OnPointerUp);
+        target.RegisterCallback<WheelEvent>(OnScroll);
     }
 
     protected override void UnregisterCallbacksFromTarget()
     {
         target.UnregisterCallback<PointerDownEvent>(OnPointerDown);
-        target.UnregisterCallback<PointerMoveEvent>(OnPointerMove);
+        // target.UnregisterCallback<PointerMoveEvent>(OnPointerMove);
         target.UnregisterCallback<PointerUpEvent>(OnPointerUp);
     }
 
@@ -69,6 +70,17 @@ public class Lab3Resizer : PointerManipulator
         m_Active = false;
         target.ReleasePointer(m_PointerId);
         m_PointerId = -1;
+        e.StopPropagation();
+    }
+
+    protected void OnScroll(WheelEvent e)
+    {
+        if (!m_Active || !target.HasPointerCapture(m_PointerId)) return;
+        Debug.Log(e.delta.y);
+
+        target.style.height = target.layout.size.y + e.delta.y;
+        target.style.width = target.layout.size.x + e.delta.y;
+
         e.StopPropagation();
     }
 }
