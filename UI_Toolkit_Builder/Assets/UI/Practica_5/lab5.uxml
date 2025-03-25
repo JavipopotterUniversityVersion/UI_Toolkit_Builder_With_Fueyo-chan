@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="plantilla" src="project://database/Assets/UI/Practica_5/plantilla.uxml?fileID=9197481963319205126&amp;guid=9238676556cdffb438e89d246c1d2e25&amp;type=3#plantilla" />
+    <ui:VisualElement name="Contenedor" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="Izda" style="flex-grow: 1; background-color: rgb(201, 186, 10); width: 18px;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/07_bread.png?fileID=2800000&amp;guid=7a1a6829b237e55438846bd7111be4f9&amp;type=3#07_bread&quot;);" />
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/13_bacon.png?fileID=2800000&amp;guid=26c8924645b1907499d6df69742ea3c4&amp;type=3#13_bacon&quot;);" />
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/20_bagel.png?fileID=2800000&amp;guid=e4bdf97a3763da24d868ff39a3fda89b&amp;type=3#20_bagel&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Body" style="flex-grow: 1; font-size: 18px; -unity-font-style: bold;">
+                <ui:TextField picking-mode="Ignore" label="Nombre" value="filler text" name="InputNombre" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Footer" style="flex-grow: 1; font-size: 18px; -unity-font-style: bold;">
+                <ui:TextField picking-mode="Ignore" label="Apellido" value="filler text" name="InputApellido" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Dcha" style="flex-grow: 1;">
+            <ui:Instance template="plantilla" name="plantilla" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
