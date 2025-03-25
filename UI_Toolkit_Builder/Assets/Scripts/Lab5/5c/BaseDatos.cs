@@ -10,26 +10,31 @@ namespace Lab5c_namespace
         public static List<Individuo> getData()
         {
             List<Individuo> datos = new List<Individuo>();
-            
+
+            Texture2D texture = Resources.Load<Texture2D>("apple_pie");
             Individuo perico = new Individuo(
                 "Perico",
-                "Palotes"
+                "Palotes",
+                texture
             );
 
             Individuo tornasol = new Individuo(
                 "Tornasol",
-                "Tornasolado"
+                "Tornasolado",
+                texture
             );
 
             Individuo luca = new Individuo(
                 "Luca",
-                "Lucatell"
+                "Lucatell",
+                texture
             );
 
             Individuo ivan = new Individuo(
                 "Ivan",
-                "Ivanovich"
-            );
+                "Ivanovich",
+                texture
+            ); ;
 
             datos.Add(perico);
             datos.Add(tornasol);

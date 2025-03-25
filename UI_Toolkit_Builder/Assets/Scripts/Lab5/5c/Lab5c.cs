@@ -27,6 +27,9 @@ namespace Lab5c_namespace
             tarjeta3 = root.Q("Tarjeta3");
             tarjeta4 = root.Q("Tarjeta4");
 
+            List<VisualElement> images = root.Query(className: "image").ToList();
+            images.ForEach(elem => elem.RegisterCallback<ClickEvent>(CambioImagen));
+
             input_nombre = root.Q<TextField>("InputNombre");
             input_apellido = root.Q<TextField>("InputApellido");
 
@@ -49,6 +52,12 @@ namespace Lab5c_namespace
         void CambioApellido(ChangeEvent<string> evt)
         {
             selecIndividuo.Apellido = evt.newValue;
+        }
+
+        void CambioImagen(ClickEvent evt)
+        {
+            VisualElement target = evt.target as VisualElement;
+            selecIndividuo.Image = target.resolvedStyle.backgroundImage;
         }
 
         void seleccionTarjeta(ClickEvent evt)

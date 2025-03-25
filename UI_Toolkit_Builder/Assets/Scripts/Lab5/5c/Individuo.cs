@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UIElements;
 
 namespace Lab5c_namespace
 {
@@ -37,10 +38,25 @@ namespace Lab5c_namespace
             }
         }
 
-        public Individuo(string nombre, string apellido)
+        private Background image;
+
+        public Background Image
+        {
+            get { return image; }
+            set
+            {
+                if (value != image)
+                {
+                    image = value;
+                    Cambio?.Invoke();
+                }
+            }
+        }
+        public Individuo(string nombre, string apellido, Background image)
         {
             this.nombre = nombre;
             this.apellido = apellido;
+            this.image = image;
         }
     }
 }
