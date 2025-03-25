@@ -3,9 +3,9 @@
     <ui:VisualElement name="Contenedor" style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="Izda" style="flex-grow: 1; background-color: rgb(201, 186, 10); width: 30%;">
             <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row;">
-                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/07_bread.png?fileID=2800000&amp;guid=7a1a6829b237e55438846bd7111be4f9&amp;type=3#07_bread&quot;);" />
-                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/13_bacon.png?fileID=2800000&amp;guid=26c8924645b1907499d6df69742ea3c4&amp;type=3#13_bacon&quot;);" />
-                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/20_bagel.png?fileID=2800000&amp;guid=e4bdf97a3763da24d868ff39a3fda89b&amp;type=3#20_bagel&quot;);" />
+                <ui:VisualElement class="image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/07_bread.png?fileID=2800000&amp;guid=7a1a6829b237e55438846bd7111be4f9&amp;type=3#07_bread&quot;);" />
+                <ui:VisualElement class="image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/13_bacon.png?fileID=2800000&amp;guid=26c8924645b1907499d6df69742ea3c4&amp;type=3#13_bacon&quot;);" />
+                <ui:VisualElement class="image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/20_bagel.png?fileID=2800000&amp;guid=e4bdf97a3763da24d868ff39a3fda89b&amp;type=3#20_bagel&quot;);" />
             </ui:VisualElement>
             <ui:VisualElement name="Body" style="flex-grow: 1; font-size: 18px; -unity-font-style: bold;">
                 <ui:TextField picking-mode="Ignore" label="Nombre" value="filler text" name="InputNombre" />
