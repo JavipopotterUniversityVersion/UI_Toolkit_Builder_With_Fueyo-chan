@@ -17,3 +17,23 @@
 .row {
     flex-direction: row;
 }
+
+.container {
+}
+
+.element {
+    flex-grow: 1;
+    background-color: rgb(215, 176, 0);
+    width: 33%;
+    height: 33%;
+    max-width: none;
+    max-height: none;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/lab4.uss?fileID=7433441132597879392&amp;guid=9dad1c90e128ba94f873af5aaf4da3f1&amp;type=3#lab4" />
+    <Lab4d elementCount="4" imageTexture="apple_pie" currentElements="3" style="height: 25%; flex-direction: row;" />
+</ui:UXML>

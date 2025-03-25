@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="AtributesContainer" src="project://database/Assets/UI/Practica_4/AtributesContainer.uxml?fileID=9197481963319205126&amp;guid=98766b0905a1d5845b5e6c09e1785c0b&amp;type=3#AtributesContainer" />
+    <Style src="project://database/Assets/UI/Practica_4/lab4.uss?fileID=7433441132597879392&amp;guid=9dad1c90e128ba94f873af5aaf4da3f1&amp;type=3#lab4" />
+    <ui:Instance template="AtributesContainer" name="AtributesContainer" style="max-height: 100%; max-width: 100%; min-width: 100%; min-height: 100%;" />
+</ui:UXML>

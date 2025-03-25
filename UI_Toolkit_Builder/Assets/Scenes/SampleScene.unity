@@ -224,7 +224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1541677710}
   - component: {fileID: 1541677709}
-  - component: {fileID: 1541677711}
   m_Layer: 0
   m_Name: doc
   m_TagString: Untagged
@@ -246,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 5a63cf1928d039f498d91b7481e61816, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: dadeb0a64952ba64fb3d73c329e1efcd, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 7ce6670f91ed9eb4d964e100872aa82b, type: 3}
   m_SortingOrder: 0
 --- !u!4 &1541677710
 Transform:
@@ -263,18 +262,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1541677711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541677708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2786ae6d7c43fe14fb06419a9a683386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
