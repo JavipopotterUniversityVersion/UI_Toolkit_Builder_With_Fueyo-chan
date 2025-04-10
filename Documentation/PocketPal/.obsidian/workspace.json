@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 267.5
   },
   "right": {
     "id": "7a5ba9433e6f6a9b",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Menú de Explotación laboral.md",
+                "file": "Menú de Cárcel de Pocket Bros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Menú de Explotación laboral"
+              "title": "Backlinks for Menú de Cárcel de Pocket Bros"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Menú de Explotación laboral.md",
+                "file": "Menú de Cárcel de Pocket Bros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Menú de Explotación laboral"
+              "title": "Outgoing links from Menú de Cárcel de Pocket Bros"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Menú de Explotación laboral.md",
+                "file": "Menú de Cárcel de Pocket Bros.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Menú de Explotación laboral"
+              "title": "Outline of Menú de Cárcel de Pocket Bros"
             }
           }
         ]
@@ -160,32 +160,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "547cb8a6a20d278e",
   "lastOpenFiles": [
-    "Menú Principal.md",
-    "Menú de Explotación laboral.md",
     "Images/tomoMenu.jpeg",
-    "Images/tomoMenu.jpeg.opdownload",
-    "Menú Máquina de Bolas de chicle.md",
-    "Images/tomoCity.jpg",
-    "Images/tomoCity.jpg.opdownload",
-    "Menú de Cárcel de Pocket Bros.md",
-    "Pocket Bro.md",
+    "Images/Hoenn.png",
+    "Images/Hoenn.png.crdownload",
     "Images/city.jpg",
-    "Images/city.jpg.opdownload",
     "Images/inventarioImg.jpg",
-    "Images/sddefault.jpg.opdownload",
-    "Images/Caja_4_generacion_pokemon_ss.webp",
-    "Images/Caja_4_generacion_pokemon_ss.webp.opdownload",
-    "Images",
-    "Nueva carpeta"
+    "Images/tomoCity.jpg",
+    "Menú de Explotación laboral.md",
+    "Pocket Bro.md",
+    "Menú Principal.md",
+    "Menú Máquina de Bolas de chicle.md",
+    "Images/gacha.png",
+    "Images/gacha.png.crdownload",
+    "Menú de Cárcel de Pocket Bros.md",
+    "Images"
   ]
 }
