@@ -8,3 +8,5 @@ El juego consta de 3 menús:
 -[[Menú Máquina de Bolas de chicle]]
 
 El jugador empezará con un Pocket bro inicial aleatorio, a partir de ahí ya irá consiguiendo más.
+
+https://www.figma.com/design/hzj4fIOlnJOGajachng6Xv/Pocket-Pals?m=auto&t=TW8pLdF3OeCLhWZe-6

@@ -1,16 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/lab1.uss?fileID=7433441132597879392&amp;guid=f82691d535ec03440b9cea69876da6e8&amp;type=3#lab1" />
-    <ui:VisualElement name="background" class="panel" style="flex-grow: 1;">
-        <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; margin-top: 85px; margin-right: 24px; margin-bottom: 85px; margin-left: 24px; flex-direction: row-reverse; flex-wrap: nowrap; justify-content: flex-start; align-self: flex-start; align-items: center; background-image: none; -unity-slice-scale: 8.400001px; background-color: rgba(43, 35, 53, 0.89);">
-            <ui:VisualElement name="p1" style="flex-grow: 1; height: 213px; align-items: stretch; justify-content: space-around; align-self: stretch; margin-top: 32px; margin-right: 32px;">
-                <ui:Label tabindex="-1" text="Main Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleText" class="text" style="font-size: 32px; color: rgb(252, 255, 196); -unity-text-align: upper-center; align-self: auto; align-items: stretch;" />
-                <ui:Button text="Resume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Resume" class="button" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
-                <ui:Button text="Options" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Options" class="button" />
-                <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" class="button" />
-            </ui:VisualElement>
-            <ui:VisualElement name="p2" style="flex-grow: 1; margin-top: 32px; margin-bottom: 32px; margin-left: 32px; align-items: center; flex-direction: column; -unity-slice-scale: 5.9px; overflow: hidden; visibility: visible; background-image: url(&quot;project://database/Assets/Sprites/Circle.png?fileID=21300000&amp;guid=288d324249f5f974d966cf1007de98a7&amp;type=3#Circle&quot;); opacity: 1; display: flex; border-top-left-radius: 165px; border-top-right-radius: 165px; border-bottom-right-radius: 165px; border-bottom-left-radius: 165px; -unity-background-image-tint-color: rgb(255, 243, 132); -unity-background-scale-mode: scale-and-crop; justify-content: flex-start;">
-                <ui:VisualElement name="img" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Zenith_Emotions.png?fileID=2092057086&amp;guid=61d0ec9fe498f0b4ba7c10a69e4cafa1&amp;type=3#Zenith_Emotions_0&quot;); height: 148px; width: 243px; align-self: auto; -unity-background-scale-mode: scale-to-fit; justify-content: flex-start; align-items: auto; margin-top: 36px;" />
-            </ui:VisualElement>
-        </ui:VisualElement>
-    </ui:VisualElement>
+    <Style src="project://database/Assets/UI/Practicas/Practica_1/lab1.uss?fileID=7433441132597879392&amp;guid=f82691d535ec03440b9cea69876da6e8&amp;type=3#lab1" />
+    <ui:VisualElement name="background" class="panel" style="flex-grow: 1; width: 100%; height: 100%;" />
 </ui:UXML>

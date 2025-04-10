@@ -1,7 +1,3 @@
-.panel {
-    background-color: rgba(0, 0, 0, 0.51);
-}
-
 .text {
     -unity-font: url("project://database/Assets/fonts/vcrosdneue/VCRosdNEUE.ttf?fileID=12800000&guid=8dbec1026331b334da8f8a79fd846226&type=3#VCRosdNEUE");
     -unity-font-definition: url("project://database/Assets/fonts/vcrosdneue/VCRosdNEUE%20SDF.asset?fileID=11400000&guid=e0eca5f6773e5df459280135be6b0f4f&type=2#VCRosdNEUE SDF");
