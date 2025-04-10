@@ -6,3 +6,5 @@ El juego consta de 3 menús:
 -[[Menú de Explotación laboral]]
 -[[Menú de Cárcel de Pocket Bros]]
 -[[Menú Máquina de Bolas de chicle]]
+
+El jugador empezará con un Pocket bro inicial aleatorio, a partir de ahí ya irá consiguiendo más.
