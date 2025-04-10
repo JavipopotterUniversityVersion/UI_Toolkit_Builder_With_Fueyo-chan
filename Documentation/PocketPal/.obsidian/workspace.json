@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pocket Bro.md",
+                "file": "Menú de Explotación laboral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pocket Bro"
+              "title": "Menú de Explotación laboral"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 267.5
   },
   "right": {
     "id": "7a5ba9433e6f6a9b",
@@ -170,12 +170,14 @@
   },
   "active": "547cb8a6a20d278e",
   "lastOpenFiles": [
-    "Menú Máquina de Bolas de chicle.md",
-    "Images/inventarioImg.jpg",
-    "Images",
-    "Menú de Cárcel de Pocket Bros.md",
     "Pocket Bro.md",
+    "Menú Principal.md",
+    "Menú Máquina de Bolas de chicle.md",
+    "Images/gacha.png",
+    "Images/inventarioImg.jpg",
+    "Images/gacha.png.crdownload",
+    "Menú de Cárcel de Pocket Bros.md",
     "Menú de Explotación laboral.md",
-    "Menú Principal.md"
+    "Images"
   ]
 }
