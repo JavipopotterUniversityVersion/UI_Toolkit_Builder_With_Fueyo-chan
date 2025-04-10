@@ -1,0 +1,1 @@
+![[inventarioImg.jpg]]
