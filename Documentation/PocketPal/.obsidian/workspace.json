@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Menú de Cárcel de Pocket Bros.md",
+                "file": "Pocket Bro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Menú de Cárcel de Pocket Bros"
+              "title": "Pocket Bro"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -160,26 +160,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "547cb8a6a20d278e",
   "lastOpenFiles": [
-    "Images/inventarioImg.jpg",
-    "Menú de Cárcel de Pocket Bros.md",
-    "Images/sddefault.jpg.opdownload",
-    "Images/Caja_4_generacion_pokemon_ss.webp",
-    "Menú de Explotación laboral.md",
     "Menú Máquina de Bolas de chicle.md",
-    "Menú Principal.md",
-    "Pocket Bro.md",
-    "Images/Caja_4_generacion_pokemon_ss.webp.opdownload",
+    "Images/inventarioImg.jpg",
     "Images",
-    "Nueva carpeta"
+    "Menú de Cárcel de Pocket Bros.md",
+    "Pocket Bro.md",
+    "Menú de Explotación laboral.md",
+    "Menú Principal.md"
   ]
 }
