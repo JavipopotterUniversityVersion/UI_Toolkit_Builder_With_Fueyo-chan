@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Practicas/Practica_1/lab1.uss?fileID=7433441132597879392&amp;guid=f82691d535ec03440b9cea69876da6e8&amp;type=3#lab1" />
+    <Style src="project://database/Assets/UI/ProyectoFinal/lab1.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#lab1" />
     <ui:VisualElement name="contenedor" class="panel" style="flex-grow: 1; width: 100%; height: 100%; flex-direction: row;">
         <ui:VisualElement name="izquierda" style="flex-grow: 1;">
             <ui:VisualElement name="tarjeta" style="flex-grow: 1;">
