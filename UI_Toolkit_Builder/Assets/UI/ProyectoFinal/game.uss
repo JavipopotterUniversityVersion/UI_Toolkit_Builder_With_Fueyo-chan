@@ -36,3 +36,16 @@
     border-bottom-color: rgba(0, 0, 0, 0);
     -unity-background-image-tint-color: rgb(255, 255, 255);
 }
+.tarjeta {
+    width: 25%;
+    height: 25%;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(53, 27, 0);
+    border-right-color: rgb(53, 27, 0);
+    border-top-color: rgb(53, 27, 0);
+    border-bottom-color: rgb(53, 27, 0);
+    background-color: rgb(191, 191, 191);
+}
