@@ -104,23 +104,24 @@ namespace proyecto_final
             Tarjeta tar2 = new Tarjeta(tarjeta2, individuos[1]);
             Tarjeta tar3 = new Tarjeta(tarjeta3, individuos[2]);
             Tarjeta tar4 = new Tarjeta(tarjeta4, individuos[3]);
-            Tarjeta tar5 = new Tarjeta(tarjeta1, individuos[4]);
-            Tarjeta tar6 = new Tarjeta(tarjeta2, individuos[5]);
-            Tarjeta tar7 = new Tarjeta(tarjeta3, individuos[6]);
-            Tarjeta tar8 = new Tarjeta(tarjeta4, individuos[7]);
-            Tarjeta tar9 = new Tarjeta(tarjeta1, individuos[8]);
-            Tarjeta tar10 = new Tarjeta(tarjeta2, individuos[9]);
-            Tarjeta tar11 = new Tarjeta(tarjeta3, individuos[10]);
-            Tarjeta tar12 = new Tarjeta(tarjeta4, individuos[11]);
-            Tarjeta tar13 = new Tarjeta(tarjeta1, individuos[12]);
-            Tarjeta tar14 = new Tarjeta(tarjeta2, individuos[13]);
-            Tarjeta tar15 = new Tarjeta(tarjeta3, individuos[14]);
-            Tarjeta tar16 = new Tarjeta(tarjeta4, individuos[15]);
+            Tarjeta tar5 = new Tarjeta(tarjeta5, individuos[4]);
+            Tarjeta tar6 = new Tarjeta(tarjeta6, individuos[5]);
+            Tarjeta tar7 = new Tarjeta(tarjeta7, individuos[6]);
+            Tarjeta tar8 = new Tarjeta(tarjeta8, individuos[7]);
+            Tarjeta tar9 = new Tarjeta(tarjeta9, individuos[8]);
+            Tarjeta tar10 = new Tarjeta(tarjeta10, individuos[9]);
+            Tarjeta tar11 = new Tarjeta(tarjeta11, individuos[10]);
+            Tarjeta tar12 = new Tarjeta(tarjeta12, individuos[11]);
+            Tarjeta tar13 = new Tarjeta(tarjeta13, individuos[12]);
+            Tarjeta tar14 = new Tarjeta(tarjeta14, individuos[13]);
+            Tarjeta tar15 = new Tarjeta(tarjeta15, individuos[14]);
+            Tarjeta tar16 = new Tarjeta(tarjeta16, individuos[15]);
         }
 
         void regIndividuos()
         {
-            //Individuo ind = new Individuo("Saracatunga", "aaaaaaaaaaaaaaaaaaaaaaa", );
+            //Individuo ind = new Individuo("Saracatunga", "aaaaaaaaaaaaaaaaaaaaaaa", tarjeta1.style.backgroundImage);
+            //individuos[0] = ind;
         }
     }
 }

@@ -21,7 +21,7 @@ namespace proyecto_final
 
             nombreLabel = tarjetaRoot.Q<Label>("nombre");
             descripcionLabel = tarjetaRoot.Q<Label>("descripcion");
-            imagenVE = tarjetaRoot.Q("top");
+            imagenVE = tarjetaRoot.Q("foto");
             tarjetaRoot.userData = individuo;
 
             tarjetaRoot
@@ -35,8 +35,8 @@ namespace proyecto_final
 
         void UpdateUI()
         {
-            nombreLabel.text = miIndividuo.Nombre;
-            descripcionLabel.text = miIndividuo.Descripcion;
+            //nombreLabel.text = miIndividuo.Nombre;
+            //descripcionLabel.text = miIndividuo.Descripcion;
             imagenVE.style.backgroundImage = miIndividuo.Image;
         }
     }

@@ -1,16 +1,16 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/ProyectoFinal/lab1.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#lab1" />
     <ui:VisualElement name="contenedor" class="panel" style="flex-grow: 1; width: 100%; height: 100%; flex-direction: row;">
-        <ui:VisualElement name="izquierda" style="flex-grow: 1;">
+        <ui:VisualElement name="izquierda" style="flex-grow: 1; width: 30%; max-width: 30%;">
             <ui:VisualElement name="tarjeta" style="flex-grow: 1;">
-                <ui:VisualElement name="fotoSelec" style="flex-grow: 1; height: 40%; max-height: 40%; border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-left-color: rgb(197, 178, 58); border-right-color: rgb(197, 178, 58); border-top-color: rgb(197, 178, 58); border-bottom-color: rgb(197, 178, 58); background-color: rgb(191, 191, 191);" />
+                <ui:VisualElement name="fotoSelec" style="flex-grow: 1; height: 40%; max-height: 40%; border-top-width: 10px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 10px; border-left-color: rgb(197, 178, 58); border-right-color: rgb(197, 178, 58); border-top-color: rgb(197, 178, 58); border-bottom-color: rgb(197, 178, 58); background-color: rgb(191, 191, 191);" />
                 <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="nombre" style="height: 20%; max-height: 20%; -unity-text-align: middle-center; font-size: 30px; background-color: rgb(197, 178, 58); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
-                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="descripcion" style="height: 40%; max-height: 40%; background-color: rgb(197, 178, 58); border-top-width: 0; border-right-width: 0; border-bottom-width: 10px; border-left-width: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 20px;" />
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="descripcion" style="height: 40%; max-height: 40%; background-color: rgb(197, 178, 58); border-top-width: 0; border-right-width: 0; border-bottom-width: 10px; border-left-width: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 20px; white-space: normal;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="derecha" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; align-items: stretch; width: 70%; max-width: 70%; background-color: rgb(197, 178, 58); border-top-width: 15px; border-right-width: 15px; border-bottom-width: 15px; border-left-width: 15px; border-left-color: rgb(197, 178, 58); border-right-color: rgb(197, 178, 58); border-top-color: rgb(197, 178, 58); border-bottom-color: rgb(197, 178, 58);">
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="foto" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Food/13_bacon.png?fileID=2800000&amp;guid=26c8924645b1907499d6df69742ea3c4&amp;type=3#13_bacon&quot;);" />
+                <ui:VisualElement name="foto" style="flex-grow: 1;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta2" class="tarjeta">
                 <ui:VisualElement name="foto" style="flex-grow: 1;" />
