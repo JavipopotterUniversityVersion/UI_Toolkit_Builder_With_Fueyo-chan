@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ProyectoFinal/lab1.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#lab1" />
+    <ui:VisualElement name="Gumball" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Gumball.png?fileID=2800000&amp;guid=24b4dbf21d7b6f5468643eae658eb1d7&amp;type=3#Gumball&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: 51px; margin-right: 51px; margin-bottom: 51px; margin-left: 51px;" />
+    <ui:Button text="Buy" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Buy" class="button" />
+    <ui:Button text="PalDex" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PalDex" class="button" />
+</ui:UXML>

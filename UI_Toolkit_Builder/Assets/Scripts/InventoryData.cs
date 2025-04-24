@@ -7,7 +7,8 @@ public struct PalData
 {
     public string name;
     public string  description;
-    public Sprite icon;
+    public Sprite shape;
+    public Sprite face;
 }
 
 [CreateAssetMenu(fileName = "InventoryData", menuName = "ScriptableObjects/InventoryData", order = 1)]
@@ -15,14 +16,10 @@ public class InventoryData : ScriptableObject
 {
     List<PalData> palDataList = new List<PalData>();
 
-    public void AddPal(string name, string description, Sprite icon)
+    public void AddPal(PalData palData)
     {
-        PalData newPalData = new PalData {
-            name = name,
-            description = description,
-            icon = icon
-        };
-        palDataList.Add(newPalData);
+        if (!palDataList.Contains(palData)) palDataList.Add(palData);
+        else Debug.LogWarning("PalData already exists in the list.");
     }
 
     public void RemovePal(PalData palData)
