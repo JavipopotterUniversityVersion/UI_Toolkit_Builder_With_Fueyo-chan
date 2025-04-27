@@ -104,8 +104,8 @@ TextureImporter:
         y: 7
         width: 46
         height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46303657, y: 0.46666038}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 57
         height: 52
       alignment: 9
-      pivot: {x: 0.3384216, y: 0.5037684}
+      pivot: {x: 0.34488317, y: 0.46730143}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,6 +155,132 @@ TextureImporter:
       bones: []
       spriteID: c693d85642e84ac4cb18be474d66cc4c
       internalID: 1392021536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 5
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a25685f89c28d4dbbfbb0669e0a640
+      internalID: 1434202843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 54
+        height: 56
+      alignment: 9
+      pivot: {x: 0.67632943, y: 0.7550476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36aa3ec8dfd87684ea081513e71b62a1
+      internalID: -739245678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 8
+        width: 52
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5196193, y: 0.27122968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decf40701e60b93419e3198264e56491
+      internalID: -669984061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 11
+        width: 59
+        height: 48
+      alignment: 9
+      pivot: {x: 0.4769458, y: 0.6558624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d1b080d70a9a644b26080c5bcce466
+      internalID: -1820635283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 12
+        width: 84
+        height: 46
+      alignment: 9
+      pivot: {x: 0.37450117, y: 0.40389508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974df9ac852beba4198c59943c20f785
+      internalID: -1465706005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_8
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 5
+        width: 41
+        height: 55
+      alignment: 9
+      pivot: {x: 0.43364882, y: 0.7225874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d251d1cd9a0b0a041b2eaa348b5bd493
+      internalID: 59418661
       vertices: []
       indices: 
       edges: []
@@ -173,6 +299,12 @@ TextureImporter:
       Pals_0: 102034945
       Pals_1: -1789829252
       Pals_2: 1392021536
+      Pals_3: 1434202843
+      Pals_4: -739245678
+      Pals_5: -669984061
+      Pals_6: -1820635283
+      Pals_7: -1465706005
+      Pals_8: 59418661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

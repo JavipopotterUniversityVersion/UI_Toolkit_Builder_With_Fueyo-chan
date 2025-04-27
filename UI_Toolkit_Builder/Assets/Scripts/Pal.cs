@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Pal : MonoBehaviour
 {
+    PalData _palData;
+    public PalData PalData => _palData;
+
     public void SetPal(PalData palData)
     {
         SpriteRenderer shapeRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
@@ -13,5 +16,6 @@ public class Pal : MonoBehaviour
         faceRenderer.sprite = palData.face;
 
         shapeRenderer.color = new Color(Random.value, Random.value, Random.value, 1f);
+        _palData = palData;
     }
 }

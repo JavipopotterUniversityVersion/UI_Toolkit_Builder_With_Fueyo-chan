@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+[System.Serializable]
 public struct PalData
 {
     public string name;
@@ -14,7 +15,7 @@ public struct PalData
 [CreateAssetMenu(fileName = "InventoryData", menuName = "ScriptableObjects/InventoryData", order = 1)]
 public class InventoryData : ScriptableObject
 {
-    List<PalData> palDataList = new List<PalData>();
+    [SerializeField] List<PalData> palDataList = new List<PalData>();
 
     public void AddPal(PalData palData)
     {

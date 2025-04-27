@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ProyectoFinal/game.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#game" />
+    <ui:VisualElement name="background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.87); -unity-background-scale-mode: stretch-to-fill; justify-content: space-between;">
+        <ui:Label tabindex="-1" text="Pal Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title" class="text" style="justify-content: flex-start; align-self: center; font-size: 67px; color: rgb(255, 255, 255);" />
+        <ui:Label tabindex="-1" text="Lorem ipsum skibidi toilet sigma chamba" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" class="text" style="justify-content: flex-start; align-self: center; font-size: 46px; text-overflow: clip; white-space: normal; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>
