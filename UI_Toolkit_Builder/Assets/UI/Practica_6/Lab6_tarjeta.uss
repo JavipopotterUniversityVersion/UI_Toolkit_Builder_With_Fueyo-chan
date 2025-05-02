@@ -1,0 +1,7 @@
+.tarjeta {
+    width: 50px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 50px;
+    max-height: 100px;
+}
