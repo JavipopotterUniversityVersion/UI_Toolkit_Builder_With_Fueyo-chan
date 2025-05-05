@@ -15,7 +15,7 @@ public class Pal : MonoBehaviour
         shapeRenderer.sprite = palData.shape;
         faceRenderer.sprite = palData.face;
 
-        shapeRenderer.color = new Color(Random.value, Random.value, Random.value, 1f);
+        shapeRenderer.color = palData.color;
         _palData = palData;
     }
 }

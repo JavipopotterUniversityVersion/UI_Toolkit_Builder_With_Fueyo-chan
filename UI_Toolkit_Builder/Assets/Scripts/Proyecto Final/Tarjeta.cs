@@ -7,37 +7,27 @@ namespace proyecto_final
 {
     public class Tarjeta
     {
-        Individuo miIndividuo;
+        PalData miPal;
         VisualElement tarjetaRoot;
 
         Label nombreLabel;
         Label descripcionLabel;
         VisualElement imagenVE;
 
-        public Tarjeta(VisualElement tarjetaRoot, Individuo individuo)
+        public Tarjeta(VisualElement tarjetaRoot, PalData pal)
         {
             this.tarjetaRoot = tarjetaRoot;
-            this.miIndividuo = individuo;
+            this.miPal = pal;
 
             nombreLabel = tarjetaRoot.Q<Label>("nombre");
             descripcionLabel = tarjetaRoot.Q<Label>("descripcion");
             imagenVE = tarjetaRoot.Q("foto");
-            tarjetaRoot.userData = individuo;
+            tarjetaRoot.userData = pal;
 
             tarjetaRoot
                 .Query(className: "tarjeta")
                 .Descendents<VisualElement>()
                 .ForEach(elem => elem.pickingMode = PickingMode.Ignore);
-            UpdateUI();
-
-            miIndividuo.Cambio += UpdateUI;
-        }
-
-        void UpdateUI()
-        {
-            //nombreLabel.text = miIndividuo.Nombre;
-            //descripcionLabel.text = miIndividuo.Descripcion;
-            imagenVE.style.backgroundImage = miIndividuo.Image;
         }
     }
 }

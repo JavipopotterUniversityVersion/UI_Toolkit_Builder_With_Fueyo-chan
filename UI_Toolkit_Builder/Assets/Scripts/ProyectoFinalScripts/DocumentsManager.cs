@@ -12,6 +12,10 @@ public class DocumentsManager : MonoBehaviour
 
     [SerializeField] Notification _notificationDocument;
 
+    private void OnEnable() {
+        OpenInventoryDocument();
+    }
+
     public void Notify(string title, string description, UnityAction callback = null)
     {
         _notificationDocument.Notify(title, description, callback);

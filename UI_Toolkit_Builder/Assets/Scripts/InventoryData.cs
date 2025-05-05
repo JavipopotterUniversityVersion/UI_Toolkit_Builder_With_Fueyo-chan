@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
 [System.Serializable]
-public struct PalData
+public class PalData
 {
     public string name;
     public string  description;
+    public Color color;
     public Sprite shape;
     public Sprite face;
 }

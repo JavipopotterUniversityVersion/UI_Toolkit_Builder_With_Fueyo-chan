@@ -29,6 +29,7 @@ public class Gumball_Machine : MonoBehaviour
         newPal.description = _palDescriptions[Random.Range(0, _palDescriptions.Length)] + " " + _palDescriptions2[Random.Range(0, _palDescriptions2.Length)];
         newPal.shape = _palsShapes[Random.Range(0, _palsShapes.Length)];
         newPal.face = _palsFaces[Random.Range(0, _palsFaces.Length)];
+        newPal.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
         return newPal;
     }
 
@@ -102,6 +103,11 @@ public class Gumball_Machine : MonoBehaviour
             CreatePal();
             StopAllCoroutines();
             StartCoroutine(PalAnimationRoutine());
+        });
+
+        VisualElement palDex_button = root.Q<VisualElement>("PalDex");
+        palDex_button.RegisterCallback<ClickEvent>(e => {
+            _documentsManager.OpenInventoryDocument();
         });
      }
 }
