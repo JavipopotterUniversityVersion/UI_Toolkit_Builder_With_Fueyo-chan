@@ -19,8 +19,8 @@ namespace Lab6_namespace
 
         public Tarjeta(VisualElement tarjetaRoot, Individuo individuo)
         {
-            this.tarjetaRoot = tarjetaRoot;
-            this.miIndividuo = individuo;
+            tarjetaRoot = tarjetaRoot;
+            miIndividuo = individuo;
 
             nombreLabel = tarjetaRoot.Q<Label>("Nombre");
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
