@@ -1,9 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ProyectoFinal/game.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#game" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="background" style="flex-grow: 1; white-space: normal; flex-wrap: wrap; flex-direction: row; flex-basis: 0; align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="background" style="flex-grow: 1; white-space: normal; flex-wrap: wrap; flex-direction: row; flex-basis: 0; align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="background" style="flex-grow: 1; white-space: normal; flex-wrap: wrap; flex-direction: row; flex-basis: 0; align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+            <ui:VisualElement name="house" class="house" style="flex-grow: 1; background-image: resource(&apos;Houses&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="background" style="flex-grow: 1; white-space: normal; flex-wrap: wrap; flex-direction: row; flex-basis: 0; align-items: center; justify-content: space-around; height: -13%; max-height: 24%; min-height: 15%; -unity-text-align: middle-left; align-self: stretch;">
+            <ui:Button text="PalDex" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Inventario" class="button" style="width: 44%;" />
+            <ui:Button text="Gumball" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Gumball" class="button" style="width: 49%;" />
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot" class="tarjeta slot">
+                <ui:VisualElement name="Img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

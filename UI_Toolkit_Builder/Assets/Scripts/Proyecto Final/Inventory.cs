@@ -9,7 +9,8 @@ namespace proyecto_final
     public class Inventory : MonoBehaviour
     {
         [SerializeField] InventoryData _palsInventory;
-        PalData selectedPal;
+        [SerializeField] InventoryData _equippedPals;
+        Tarjeta selectedTarjeta;
 
         List<VisualElement> tarjetas = new List<VisualElement>();
 
@@ -18,16 +19,18 @@ namespace proyecto_final
         VisualElement fotoSelec;
 
         DocumentsManager documentsManager;
+        UnityEngine.UIElements.Button _addToEquip;
+        VisualElement _root;
 
         private void OnEnable()
         {
             documentsManager = GetComponentInParent<DocumentsManager>();
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+            _root = root;
 
             tarjetas = root.Query(className: "tarjeta").ToList();
 
             fotoSelec = root.Q("fotoSelec");
-            //images.ForEach(elem => elem.RegisterCallback<ClickEvent>(CambioImagen));
 
             nombre_elegido = root.Q<Label>("nombre");
             desc_elegida = root.Q<Label>("descripcion");
@@ -40,36 +43,50 @@ namespace proyecto_final
             VisualElement ciudad = root.Q("City");
             ciudad.RegisterCallback<ClickEvent>(evt => documentsManager.OpenCityDocument());
 
-            //nombre_elegido.RegisterCallback<ChangeEvent<string>>(CambioNombre);
-            //desc_elegida.RegisterCallback<ChangeEvent<string>>(CambioApellido);
+            _addToEquip = root.Q<UnityEngine.UIElements.Button>("addToEquip");
+            _addToEquip.RegisterCallback<ClickEvent>(evt =>
+            {
+                if (selectedTarjeta == null) return;
+                PalData pal = selectedTarjeta.miPal;
 
+                if(_equippedPals.HasPal(pal) == false)
+                {
+                    _equippedPals.AddPal(pal);
+                    _addToEquip.text = "Quitar";
+                }
+                else
+                {
+                    _equippedPals.RemovePal(pal);
+                    _addToEquip.text = "Equipar";
+                }
+                UpdateEquipedPalsUI();
+            });
+
+            VisualElement[] slots = root.Query(className: "slot").ToList().ToArray();
+
+            UpdateEquipedPalsUI();
             UpdateUI();
         }
-
-        //void CambioNombre(ChangeEvent<string> evt)
-        //{
-        //    selecIndividuo.Nombre = evt.newValue;
-        //}
-
-        //void CambioApellido(ChangeEvent<string> evt)
-        //{
-        //    selecIndividuo.Descripcion = evt.newValue;
-        //}
-
-        //void CambioImagen(ClickEvent evt)
-        //{
-        //    VisualElement target = evt.target as VisualElement;
-        //    selecIndividuo.Image = target.resolvedStyle.backgroundImage;
-        //}
 
         void seleccionTarjeta(ClickEvent evt)
         {
             VisualElement tarjeta = evt.target as VisualElement;
-            selectedPal = tarjeta.userData as PalData;
-            if (selectedPal == null) return;
+            selectedTarjeta = tarjeta.userData as Tarjeta;
+            if (selectedTarjeta == null) return;
 
-            nombre_elegido.text = selectedPal.name;
-            desc_elegida.text = selectedPal.description;
+            nombre_elegido.text = selectedTarjeta.miPal.name;
+            desc_elegida.text = selectedTarjeta.miPal.description;
+            fotoSelec.style.backgroundImage = new StyleBackground(PalData.GetPalTexture(selectedTarjeta.miPal));
+
+            if(_equippedPals.HasPal(selectedTarjeta.miPal))
+            {
+                _addToEquip.text = "Quitar";
+            }
+            else
+            {
+                _addToEquip.text = "Equipar";
+            }
+            UpdateEquipedPalsUI();
         }
 
         public void UpdateUI()
@@ -77,13 +94,25 @@ namespace proyecto_final
             List<PalData> _pals = _palsInventory.GetPals();
             for(int i = 0; i < _pals.Count; i++)
             {
+                if(i >= tarjetas.Count) break;
                 PalData pal = _pals[i];
                 VisualElement tarjeta = tarjetas[i];
                 tarjeta.userData = new Tarjeta(tarjeta, pal);
                 
                 Texture2D palTex = PalData.GetPalTexture(pal);
-
                 tarjeta.Q("shape").style.backgroundImage = new StyleBackground(palTex);
+            }
+        }
+
+        public void UpdateEquipedPalsUI()
+        {
+            VisualElement[] slots = GetComponent<UIDocument>().rootVisualElement.Query(className: "slot").ToList().ToArray();
+            PalData[] pals = _equippedPals.GetPals().ToArray();
+            for (int i = 0; i < slots.Length; i++)
+            {
+                VisualElement slot = slots[i];
+                if (i >= pals.Length) slot.Q<VisualElement>("Img").style.backgroundImage = new StyleBackground();
+                else slot.Q<VisualElement>("Img").style.backgroundImage = new StyleBackground(PalData.GetPalTexture(pals[i]));
             }
         }
     }

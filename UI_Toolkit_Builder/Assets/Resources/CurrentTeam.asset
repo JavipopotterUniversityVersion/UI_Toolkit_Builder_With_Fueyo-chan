@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1698eb07a1fbf3d47909ce63c6964c69, type: 3}
   m_Name: CurrentTeam
   m_EditorClassIdentifier: 
+  palDataList: []

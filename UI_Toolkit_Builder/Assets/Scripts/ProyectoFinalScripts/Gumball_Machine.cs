@@ -9,10 +9,73 @@ public class Gumball_Machine : MonoBehaviour
     [SerializeField] Transform _gachaPos;
     DocumentsManager _documentsManager;
 
-    string[] _palNames = new string[] { "Fueyo", "Andy", "Guillermo", "Diego", "Mika", "Chicho", "Hugo", "Marco", "Jordi", "Itadori", "Choso", "Mayte", "Anna", "Mariel", "Muxu", "Alex" };
-    string[] _palSurnames = new string[] { "Itadori", "Llinares", "Balatrez", "Robles Durán", "Gonzalez", "Rodríguez", "Sánchez", "García", ""};
-    string[] _palDescriptions = new string[] { "A very smart guay,", "Silly and funny,", "It's gay," };
-    string[] _palDescriptions2 = new string[] { "it likes playing chess", "it's a very good friend", "it likes to play with his friends", "hates fascism", "misogynist", "loves to play with his friends" };
+    string[] _palNames = new string[] { "Fueyo", "Andy", "Guillermo", "Diego", "Mika", "Chicho", "Hugo", "Marco", "Jordi", "Itadori", "Choso", "Mayte", "Anna", "Mariel", "Muxu", "Alex", "Alec", "David", "Marc", "Carlos", "Joaquín", "Manolo", "Héctor", "Samir", "Federico", "Jaime", "Miguel", "Alejandro", "Carlos León", "León", "María", "Laurentina", "Amiel", "Ariel", "Isabelle", "Cayetano", "Laura", "Eunice", "Cristal", "Berenice", "Gwendolyn", "Wenceslavo", "Martín", "Martina", "Cayetana", "Luis", "Kesia", "Sara", "Luisa", "Lucía", "Andrea", "Marta", "Alejandra", "Inmaculada", "Rosa", "Elsa", "Elena", "María del Mar", "María del Carmen", "María de los Ángeles", "María de la Luz", "María de la Esperanza", "María de la Paz", "María de la Soledad", "María de la Asunción", "María de la Consolación", "María de la Inmaculada Concepción", "María de la Encarnación" };
+    string[] _palSurnames = new string[] { "Itadori", "Llinares", "Balatrez", "Robles Durán", "Gonzalez", "Rodríguez", "Sánchez", "García", "", "Rodero", "Gómez", "Fernández", "Salvador", "Tormos", "Estaca", "Montenegro", "Caballero", "Gallardo", "Genaim", "Peinado", "Romero", "León", "Sosa Casasola", "Soto", "Coronado", "Ruíz", "Mora", "Coca", "Valenzuela", "Valor", "Godoy", "Colomina", "Pato", "Villalba", "Torres", "Cervantes", "Van Goh", "Einstein", "Newton", "Galileo", "Copérnico", "Darwin", "Curie", "Tesla", "Hawking", "Feynman", "Bohr", "Pauli", "Heisenberg", "Planck", "Lorentz", "Ohm" };
+    string[] _palDescriptions = {
+        "Una persona muy inteligente,",
+        "Una persona graciosa,",
+        "Es homosexual,",
+        "Tiene una gran imaginación,",
+        "Suele ser muy curiosa,",
+        "Es bastante introvertida,",
+        "Tiene una energía contagiosa,",
+        "Es muy empática,",
+        "Le encanta aprender cosas nuevas,",
+        "Tiene un gran sentido de la estética,",
+        "Tiene una perspectiva única,",
+        "Le cuesta expresar lo que siente,",
+        "Posee una gran memoria,",
+        "Es increíblemente resiliente,",
+        "Se comunica con claridad,",
+        "Tiene un humor peculiar,",
+        "Le interesa el comportamiento humano,",
+        "Suele perderse en sus pensamientos,",
+        "Disfruta del silencio,",
+        "Siente una fuerte conexión con la naturaleza,",
+        "Es muy observadora,",
+        "Busca constantemente la verdad,",
+        "Le cuesta confiar en los demás,",
+        "Tiene ideas poco convencionales,",
+        "Le intrigan los misterios del universo,",
+        "Encuentra belleza en lo cotidiano,",
+        "A veces actúa por instinto,",
+        "Se siente cómoda en la soledad,",
+        "Tiene una actitud rebelde,",
+        "Se adapta fácilmente a los cambios,"
+    };
+
+    string[] _palDescriptions2 = {
+        "le gusta el ajedrez.",
+        "disfruta de los videojuegos retro.",
+        "le apasiona la música clásica.",
+        "colecciona objetos curiosos.",
+        "pasa mucho tiempo leyendo ciencia ficción.",
+        "suele escribir poesía en su tiempo libre.",
+        "le gusta explorar lugares abandonados.",
+        "es fan del cine experimental.",
+        "dedica tiempo al activismo social.",
+        "le interesa la inteligencia artificial.",
+         "colecciona piedras con formas extrañas.",
+        "le interesan los insectos.",
+        "tiene una rutina nocturna muy marcada.",
+        "sueña con vivir en otro planeta.",
+        "toma fotografías de la ciudad vacía.",
+        "escucha podcasts de filosofía.",
+        "tiene un diario encriptado.",
+        "practica meditación cada mañana.",
+        "le encanta ver la lluvia caer.",
+        "camina durante horas sin rumbo.",
+        "participa en debates en línea.",
+        "cultiva plantas exóticas.",
+        "arma rompecabezas imposibles.",
+        "modifica tecnología antigua.",
+        "lee sobre teorías conspirativas.",
+        "colecciona cartas escritas a mano.",
+        "estudia lenguas extintas.",
+        "investiga fenómenos paranormales.",
+        "crea música con sonidos encontrados.",
+        "dibuja en servilletas de papel."
+    };
 
     Sprite[] _palsShapes;
     Sprite[] _palsFaces;

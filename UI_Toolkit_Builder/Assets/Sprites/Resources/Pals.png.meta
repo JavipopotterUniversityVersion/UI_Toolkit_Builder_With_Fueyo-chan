@@ -273,7 +273,7 @@ TextureImporter:
         width: 41
         height: 55
       alignment: 9
-      pivot: {x: 0.43364882, y: 0.7225874}
+      pivot: {x: 0.4217053, y: 0.7314907}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,6 +281,258 @@ TextureImporter:
       bones: []
       spriteID: d251d1cd9a0b0a041b2eaa348b5bd493
       internalID: 59418661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_9
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 6
+        width: 56
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4912567, y: 0.43652406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338edc352e4163d4a8ce3069a0021629
+      internalID: 75175093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_10
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 5
+        width: 45
+        height: 57
+      alignment: 9
+      pivot: {x: 0.45647243, y: 0.6889967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d7f485a8fc23a4290d4d15a4dd5cc0
+      internalID: -1069245326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_11
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 4
+        width: 59
+        height: 54
+      alignment: 9
+      pivot: {x: 0.40870485, y: 0.45465985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d3b526f4222e04ca50aa95ccdc727c
+      internalID: -963978486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_12
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5
+        width: 68
+        height: 56
+      alignment: 9
+      pivot: {x: 0.55040693, y: 0.38632593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b73f6ef807980641b0d90e130c61229
+      internalID: 473627611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_13
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 8
+        width: 55
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4732899, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a473324bac01ec4391003e7336a0eb9
+      internalID: 1658857390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_14
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 3
+        width: 54
+        height: 57
+      alignment: 9
+      pivot: {x: 0.47279528, y: 0.52577233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d73aa6affccb040a75b43a9bd25357
+      internalID: -1596116166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_15
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 3
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58744144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c7c8ff82799f74eaa22e7c2db501b4
+      internalID: 597122083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_16
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 5
+        width: 63
+        height: 54
+      alignment: 9
+      pivot: {x: 0.51554364, y: 0.58161235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82820f2f84a91c49b61e48067d4b946
+      internalID: -163709027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_17
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 2
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45f65624f9070947b739ae2bdaac063
+      internalID: -22970195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_18
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 2
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831c918a7106c2a4794ef61cd75cac87
+      internalID: -137362183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_19
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 5
+        width: 87
+        height: 57
+      alignment: 9
+      pivot: {x: 0.22983454, y: 0.35395733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658232ecdce6c904ba57901f6edac46d
+      internalID: 1082100810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pals_20
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 6
+        width: 57
+        height: 55
+      alignment: 9
+      pivot: {x: 0.48281807, y: 0.5979346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfbab736adc71e4aba5d7cf3230da0c
+      internalID: 359604649
       vertices: []
       indices: 
       edges: []
@@ -298,13 +550,25 @@ TextureImporter:
     nameFileIdTable:
       Pals_0: 102034945
       Pals_1: -1789829252
+      Pals_10: -1069245326
+      Pals_11: -963978486
+      Pals_12: 473627611
+      Pals_13: 1658857390
+      Pals_14: -1596116166
+      Pals_15: 597122083
+      Pals_16: -163709027
+      Pals_17: -22970195
+      Pals_18: -137362183
+      Pals_19: 1082100810
       Pals_2: 1392021536
+      Pals_20: 359604649
       Pals_3: 1434202843
       Pals_4: -739245678
       Pals_5: -669984061
       Pals_6: -1820635283
       Pals_7: -1465706005
       Pals_8: 59418661
+      Pals_9: 75175093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

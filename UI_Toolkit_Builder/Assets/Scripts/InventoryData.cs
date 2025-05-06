@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 
 [System.Serializable]
@@ -12,6 +13,22 @@ public class PalData
     public Color color;
     public Sprite shape;
     public Sprite face;
+
+    public static bool operator==(PalData a, PalData b) {
+        return a.name == b.name && a.description == b.description && a.color == b.color && a.shape == b.shape && a.face == b.face;
+    }
+    public static bool operator!=(PalData a, PalData b) {
+        return !(a == b);
+    }
+    public override bool Equals(object obj) {
+        if (obj is PalData pal) {
+            return this == pal;
+        }
+        return false;
+    }
+    public override int GetHashCode() {
+        return name.GetHashCode() ^ description.GetHashCode() ^ color.GetHashCode() ^ shape.GetHashCode() ^ face.GetHashCode();
+    }
 
     public static Texture2D GetPalTexture(PalData pal) {
         Texture2D palTex = new Texture2D((int)pal.shape.textureRect.width, (int)pal.shape.textureRect.height);
@@ -62,4 +79,5 @@ public class InventoryData : ScriptableObject
     }
 
     public List<PalData> GetPals() => palDataList;
+    public bool HasPal(PalData palData) => palDataList.Contains(palData);
 }

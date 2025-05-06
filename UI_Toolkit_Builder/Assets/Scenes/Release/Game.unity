@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 128650121}
   - component: {fileID: 128650122}
+  - component: {fileID: 128650123}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -170,6 +171,29 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 855123450edcdf54eba2512d572f404f, type: 3}
   m_SortingOrder: 0
+--- !u!114 &128650123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128650120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a819db2b06cf6e644a5a20bd2738168d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _housesSprites:
+  - {fileID: -1158132716, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: -456789359, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: -1664991214, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: 1549191075, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: -246933534, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: 1729149907, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: 520472871, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: -1180816496, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  - {fileID: 1817052857, guid: 820ce46e041fe504283f98f1d2f536cb, type: 3}
+  _equipedPals: {fileID: 11400000, guid: 79314d9c5cbd2814a93cadc3863a3de8, type: 2}
 --- !u!1 &1068720447
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _palsInventory: {fileID: 11400000, guid: 08c1f932d8eb72745bf3acea3f808b51, type: 2}
+  _equippedPals: {fileID: 11400000, guid: 79314d9c5cbd2814a93cadc3863a3de8, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

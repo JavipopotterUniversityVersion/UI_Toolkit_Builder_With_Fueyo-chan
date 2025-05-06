@@ -7,22 +7,13 @@ namespace proyecto_final
 {
     public class Tarjeta
     {
-        PalData miPal;
-        VisualElement tarjetaRoot;
-
-        Label nombreLabel;
-        Label descripcionLabel;
-        VisualElement imagenVE;
+        public PalData miPal;
 
         public Tarjeta(VisualElement tarjetaRoot, PalData pal)
         {
-            this.tarjetaRoot = tarjetaRoot;
-            this.miPal = pal;
+            miPal = pal;
 
-            nombreLabel = tarjetaRoot.Q<Label>("nombre");
-            descripcionLabel = tarjetaRoot.Q<Label>("descripcion");
-            imagenVE = tarjetaRoot.Q("foto");
-            tarjetaRoot.userData = pal;
+            tarjetaRoot.userData = this;
 
             tarjetaRoot
                 .Query(className: "tarjeta")
