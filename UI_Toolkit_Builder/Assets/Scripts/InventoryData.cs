@@ -12,6 +12,36 @@ public class PalData
     public Color color;
     public Sprite shape;
     public Sprite face;
+
+    public static Texture2D GetPalTexture(PalData pal) {
+        Texture2D palTex = new Texture2D((int)pal.shape.textureRect.width, (int)pal.shape.textureRect.height);
+        palTex.filterMode = FilterMode.Point;
+
+        Sprite[] shape_and_face = new Sprite[2] {pal.shape, pal.face };
+
+        for (int j = 0; j < shape_and_face.Length; j++)
+        {
+            for (int y = 0; y < shape_and_face[j].textureRect.height; y++)
+            {
+                for (int x = 0; x < shape_and_face[j].textureRect.width; x++)
+                {
+                    Color pixelColor = shape_and_face[j].texture.GetPixel((int)shape_and_face[j].textureRect.xMin + x, (int)shape_and_face[j].textureRect.yMin + y);
+                    if(pixelColor.a != 0) {
+                        if(j == 0) {
+                            if(pixelColor == Color.white) pixelColor = pal.color;
+                            palTex.SetPixel(x, y, pixelColor);
+                        }
+                        else {
+                            palTex.SetPixel(x + (int)pal.shape.pivot.x - (int)pal.face.textureRect.width/2, y + (int)pal.shape.pivot.y - (int)pal.face.textureRect.height/2, pixelColor);
+                        }
+                    }
+                }
+            }
+        }
+
+        palTex.Apply();
+        return palTex;
+    }
 }
 
 [CreateAssetMenu(fileName = "InventoryData", menuName = "ScriptableObjects/InventoryData", order = 1)]

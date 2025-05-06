@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using proyecto_final;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -26,6 +27,7 @@ public class DocumentsManager : MonoBehaviour
         _inventoryDocument.rootVisualElement.style.display = DisplayStyle.Flex;
         _gachaDocument.rootVisualElement.style.display = DisplayStyle.None;
         _cityDocument.rootVisualElement.style.display = DisplayStyle.None;
+        _inventoryDocument.GetComponent<Inventory>().UpdateUI();
     }
 
     public void OpenGachaDocument()

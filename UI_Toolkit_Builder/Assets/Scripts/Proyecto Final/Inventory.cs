@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 namespace proyecto_final
@@ -31,8 +32,6 @@ namespace proyecto_final
             nombre_elegido = root.Q<Label>("nombre");
             desc_elegida = root.Q<Label>("descripcion");
 
-            // _pals = BaseDatos.getData();
-
             VisualElement panelDcha = root.Q("derecha");
             panelDcha.RegisterCallback<ClickEvent>(seleccionTarjeta);
 
@@ -44,7 +43,7 @@ namespace proyecto_final
             //nombre_elegido.RegisterCallback<ChangeEvent<string>>(CambioNombre);
             //desc_elegida.RegisterCallback<ChangeEvent<string>>(CambioApellido);
 
-            InitializeUI();
+            UpdateUI();
         }
 
         //void CambioNombre(ChangeEvent<string> evt)
@@ -73,7 +72,7 @@ namespace proyecto_final
             desc_elegida.text = selectedPal.description;
         }
 
-        void InitializeUI()
+        public void UpdateUI()
         {
             List<PalData> _pals = _palsInventory.GetPals();
             for(int i = 0; i < _pals.Count; i++)
@@ -81,35 +80,10 @@ namespace proyecto_final
                 PalData pal = _pals[i];
                 VisualElement tarjeta = tarjetas[i];
                 tarjeta.userData = new Tarjeta(tarjeta, pal);
-                Texture2D palTex = new Texture2D((int)pal.shape.textureRect.width, (int)pal.shape.textureRect.height);
-                palTex.filterMode = FilterMode.Point;
-
-                Sprite[] shape_and_face = new Sprite[2] {pal.shape, pal.face };
-
-                for (int j = 0; j < shape_and_face.Length; j++)
-                {
-                    for (int y = 0; y < shape_and_face[j].textureRect.height; y++)
-                    {
-                        for (int x = 0; x < shape_and_face[j].textureRect.width; x++)
-                        {
-                            Color pixelColor = shape_and_face[j].texture.GetPixel((int)shape_and_face[j].textureRect.xMin + x, (int)shape_and_face[j].textureRect.yMin + y);
-                            if(pixelColor.a != 0) {
-                                if(j == 0) {
-                                    palTex.SetPixel(x, y, pixelColor);
-                                }
-                                else {
-                                    palTex.SetPixel((int)pal.shape.pivot.x + x - (int)pal.face.textureRect.x, (int)pal.shape.pivot.y + y - (int)pal.face.textureRect.y, pixelColor);
-                                }
-                            }
-                        }
-                    }
-                }
-
-                palTex.Apply();
+                
+                Texture2D palTex = PalData.GetPalTexture(pal);
 
                 tarjeta.Q("shape").style.backgroundImage = new StyleBackground(palTex);
-                // tarjeta.Q("shape").style.backgroundColor = new StyleColor(pal.color);
-                // tarjeta.Q("face").style.backgroundImage = new StyleBackground(pal.face);
             }
         }
     }

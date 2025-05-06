@@ -12,28 +12,52 @@
         </ui:VisualElement>
         <ui:VisualElement name="derecha" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; align-items: stretch; width: 70%; max-width: 70%; background-color: rgb(197, 178, 58); border-top-width: 15px; border-right-width: 15px; border-bottom-width: 15px; border-left-width: 15px; border-left-color: rgb(197, 178, 58); border-right-color: rgb(197, 178, 58); border-top-color: rgb(197, 178, 58); border-bottom-color: rgb(197, 178, 58);">
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
             <ui:VisualElement name="tarjeta1" class="tarjeta">
-                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tarjeta1" class="tarjeta">
+                <ui:VisualElement name="shape" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 100%; height: 100%; justify-content: center; align-items: center;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
