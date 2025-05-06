@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Lab6_namespace
@@ -9,6 +10,7 @@ namespace Lab6_namespace
     {
         public static List<Individuo> FromJson<Individuo>(string json)
         {
+            //Debug.Log(json);
             ListaIndividuo<Individuo> listaIndividuo = JsonUtility.FromJson<ListaIndividuo<Individuo>>(json);
             return listaIndividuo.Individuos;
         }
@@ -24,6 +26,7 @@ namespace Lab6_namespace
         {
             ListaIndividuo<Individuo> listaIndividuo = new ListaIndividuo<Individuo>();
             listaIndividuo.Individuos = lista;
+            Debug.Log(listaIndividuo.Individuos);
             return JsonUtility.ToJson(listaIndividuo, prettyPrint);
         }
 

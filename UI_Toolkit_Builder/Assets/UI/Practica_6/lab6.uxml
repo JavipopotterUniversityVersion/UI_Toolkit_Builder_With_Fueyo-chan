@@ -15,7 +15,10 @@
             </ui:VisualElement>
             <ui:VisualElement name="bottom" style="flex-grow: 1; height: 25%; justify-content: center;">
                 <ui:Toggle label="Modificar" name="ToggleModificar" />
-                <ui:Button text="Crear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonCrear" />
+                <ui:VisualElement name="botones" style="flex-grow: 1; flex-direction: row; justify-content: center;">
+                    <ui:Button text="Crear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonCrear" />
+                    <ui:Button text="Guardar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonGuardar" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Dcha" picking-mode="Ignore" style="flex-grow: 1; width: 60%; flex-direction: row; flex-wrap: wrap;" />

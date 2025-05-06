@@ -10,6 +10,7 @@ namespace Lab6_namespace
     public class Lab6 : MonoBehaviour
     {
         VisualElement botonCrear;
+        VisualElement botonGuardar;
         Toggle toggleModificar;
         VisualElement contenedor_dcha;
         VisualElement fotos_izq;
@@ -28,11 +29,13 @@ namespace Lab6_namespace
             input_nombre = root.Q<TextField>("InputNombre");
             input_apellido = root.Q<TextField>("InputApellido");
             botonCrear = root.Q<Button>("BotonCrear");
+            botonGuardar = root.Q<Button>("BotonGuardar");
             toggleModificar = root.Q<Toggle>("ToggleModificar");
 
             contenedor_dcha.RegisterCallback<ClickEvent>(seleccionTarjeta);
             fotos_izq.RegisterCallback<ClickEvent>(CambioFoto);
             botonCrear.RegisterCallback<ClickEvent>(NuevaTarjeta);
+            botonGuardar.RegisterCallback<ClickEvent>(Guardar);
             input_nombre.RegisterCallback<ChangeEvent<string>>(CambioNombre);
             input_apellido.RegisterCallback<ChangeEvent<string>>(CambioApellido);
         }
@@ -54,14 +57,15 @@ namespace Lab6_namespace
                 individuoSelec = individuo;
 
                 lista_individuos.Add(individuo);
-                
-                string listaToJson = JsonHelperIndividuo.ToJson(lista_individuos, true);
-                
+
+                string listaToJson = JsonHelperIndividuo.ToJson(lista_individuos);
+                Debug.Log(listaToJson);
+
                 List<Individuo> jsonToLista = JsonHelperIndividuo.FromJson<Individuo>(listaToJson);
-                //jsonToLista.ForEach(elem =>
-                //{
-                //    Debug.Log(elem.Nombre + " " + elem.Apellido);
-                //});
+                jsonToLista.ForEach(elem =>
+                {
+                    Debug.Log(elem.Nombre + " " + elem.Apellido);
+                });
             }
         }
 
@@ -133,6 +137,11 @@ namespace Lab6_namespace
             tarjeta.style.borderRightColor = Color.white;
             tarjeta.style.borderTopColor = Color.white;
             tarjeta.style.borderLeftColor = Color.white;
+        }
+
+        void Guardar(ClickEvent e)
+        {
+
         }
     }
 }
