@@ -38,25 +38,25 @@ namespace Lab6_namespace
             }
         }
 
-        //private Background image;
+        private Background image;
 
-        //public Background Image
-        //{
-        //    get { return image; }
-        //    set
-        //    {
-        //        if (value != image)
-        //        {
-        //            image = value;
-        //            Cambio?.Invoke();
-        //        }
-        //    }
-        //}
-        public Individuo(string nombre, string apellido/*, Background image*/)
+        public Background Image
+        {
+            get { return image; }
+            set
+            {
+                if (value != image)
+                {
+                    image = value;
+                    Cambio?.Invoke();
+                }
+            }
+        }
+        public Individuo(string nombre, string apellido, Background image)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-            //this.image = image;
+            this.image = image;
         }
     }
 }

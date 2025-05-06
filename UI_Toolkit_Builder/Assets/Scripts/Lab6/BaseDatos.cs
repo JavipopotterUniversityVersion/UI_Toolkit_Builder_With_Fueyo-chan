@@ -14,26 +14,26 @@ namespace Lab6_namespace
             Texture2D texture = Resources.Load<Texture2D>("apple_pie");
             Individuo perico = new Individuo(
                 "Perico",
-                "Palotes"
-                //texture
+                "Palotes",
+                texture
             );
 
             Individuo tornasol = new Individuo(
                 "Tornasol",
-                "Tornasolado"
-                //texture
+                "Tornasolado",
+                texture
             );
 
             Individuo luca = new Individuo(
                 "Luca",
-                "Lucatell"
-                //texture
+                "Lucatell",
+                texture
             );
 
             Individuo ivan = new Individuo(
                 "Ivan",
-                "Ivanovich"
-                //texture
+                "Ivanovich",
+                texture
             ); ;
 
             datos.Add(perico);
