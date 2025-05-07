@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Pocket Pals"
             }
+          },
+          {
+            "id": "bcdce0ae63c2fc28",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +181,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "547cb8a6a20d278e",
+  "active": "bcdce0ae63c2fc28",
   "lastOpenFiles": [
     "Images/zygarde-50.png",
     "Images/zygarde-50.png.crdownload",

@@ -10,7 +10,7 @@ namespace proyecto_final
     {
         [SerializeField] InventoryData _palsInventory;
         [SerializeField] InventoryData _equippedPals;
-        Tarjeta selectedTarjeta;
+        Tarjeta _selectedTarjeta;
 
         List<VisualElement> tarjetas = new List<VisualElement>();
 
@@ -20,13 +20,11 @@ namespace proyecto_final
 
         DocumentsManager documentsManager;
         UnityEngine.UIElements.Button _addToEquip;
-        VisualElement _root;
 
         private void OnEnable()
         {
             documentsManager = GetComponentInParent<DocumentsManager>();
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-            _root = root;
 
             tarjetas = root.Query(className: "tarjeta").ToList();
 
@@ -46,8 +44,8 @@ namespace proyecto_final
             _addToEquip = root.Q<UnityEngine.UIElements.Button>("addToEquip");
             _addToEquip.RegisterCallback<ClickEvent>(evt =>
             {
-                if (selectedTarjeta == null) return;
-                PalData pal = selectedTarjeta.miPal;
+                if (_selectedTarjeta == null) return;
+                PalData pal = _selectedTarjeta.miPal;
 
                 if(_equippedPals.HasPal(pal) == false)
                 {
@@ -64,6 +62,19 @@ namespace proyecto_final
 
             VisualElement[] slots = root.Query(className: "slot").ToList().ToArray();
 
+            VisualElement deleteButton = root.Q("Delete");
+            deleteButton.RegisterCallback<ClickEvent>(evt =>
+            {
+                if (_selectedTarjeta == null) return;
+                PalData pal = _selectedTarjeta.miPal;
+                _palsInventory.RemovePal(pal);
+                if(_equippedPals.HasPal(pal)) _equippedPals.RemovePal(pal);
+                _selectedTarjeta = null;
+                fotoSelec.style.backgroundImage = new StyleBackground();
+                UpdateEquipedPalsUI();
+                UpdateUI();
+            });
+
             UpdateEquipedPalsUI();
             UpdateUI();
         }
@@ -71,14 +82,14 @@ namespace proyecto_final
         void seleccionTarjeta(ClickEvent evt)
         {
             VisualElement tarjeta = evt.target as VisualElement;
-            selectedTarjeta = tarjeta.userData as Tarjeta;
-            if (selectedTarjeta == null) return;
+            _selectedTarjeta = tarjeta.userData as Tarjeta;
+            if (_selectedTarjeta == null) return;
 
-            nombre_elegido.text = selectedTarjeta.miPal.name;
-            desc_elegida.text = selectedTarjeta.miPal.description;
-            fotoSelec.style.backgroundImage = new StyleBackground(PalData.GetPalTexture(selectedTarjeta.miPal));
+            nombre_elegido.text = _selectedTarjeta.miPal.name;
+            desc_elegida.text = _selectedTarjeta.miPal.description;
+            fotoSelec.style.backgroundImage = new StyleBackground(PalData.GetPalTexture(_selectedTarjeta.miPal));
 
-            if(_equippedPals.HasPal(selectedTarjeta.miPal))
+            if(_equippedPals.HasPal(_selectedTarjeta.miPal))
             {
                 _addToEquip.text = "Quitar";
             }
@@ -92,15 +103,21 @@ namespace proyecto_final
         public void UpdateUI()
         {
             List<PalData> _pals = _palsInventory.GetPals();
-            for(int i = 0; i < _pals.Count; i++)
+            for(int i = 0; i < tarjetas.Count; i++)
             {
-                if(i >= tarjetas.Count) break;
-                PalData pal = _pals[i];
-                VisualElement tarjeta = tarjetas[i];
-                tarjeta.userData = new Tarjeta(tarjeta, pal);
-                
-                Texture2D palTex = PalData.GetPalTexture(pal);
-                tarjeta.Q("shape").style.backgroundImage = new StyleBackground(palTex);
+                if(i >= _pals.Count){
+                    VisualElement tarjeta = tarjetas[i];
+                    
+                    tarjeta.Q("shape").style.backgroundImage = new StyleBackground();
+                    tarjeta.userData = null;
+                } else {
+                    PalData pal = _pals[i];
+                    VisualElement tarjeta = tarjetas[i];
+                    tarjeta.userData = new Tarjeta(tarjeta, pal);
+                    
+                    Texture2D palTex = PalData.GetPalTexture(pal);
+                    tarjeta.Q("shape").style.backgroundImage = new StyleBackground(palTex);
+                }
             }
         }
 
