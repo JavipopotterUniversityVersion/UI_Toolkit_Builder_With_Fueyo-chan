@@ -1,4 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/ProyectoFinal/lab1.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#lab1" />
-    <ui:VisualElement name="gameView" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/SampleTexture.renderTexture?fileID=8400000&amp;guid=5e659082edecafe49a0d35c5add4c0a1&amp;type=2#SampleTexture&quot;);" />
+    <Style src="project://database/Assets/UI/ProyectoFinal/game.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#game" />
+    <ui:VisualElement name="gameView" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/SampleTexture.renderTexture?fileID=8400000&amp;guid=5e659082edecafe49a0d35c5add4c0a1&amp;type=2#SampleTexture&quot;);">
+        <ui:VisualElement name="pal" style="flex-grow: 1; background-image: resource(&apos;Pals&apos;); transform-origin: center; translate: 0 0; scale: 0.6 0.6; -unity-background-scale-mode: scale-to-fit; display: flex;" />
+    </ui:VisualElement>
 </ui:UXML>

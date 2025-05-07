@@ -12,30 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1698eb07a1fbf3d47909ce63c6964c69, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
-  palDataList:
-  - name: "Mar\xEDa de la Encarnaci\xF3n Galileo"
-    description: "Es homosexual, cultiva plantas ex\xF3ticas."
-    color: {r: 0.58267313, g: 0.41220325, b: 0.22846389, a: 1}
-    shape: {fileID: -1465706005, guid: 373d0f71951868d4583ae74e6e00fda2, type: 3}
-    face: {fileID: 1055334726, guid: 1050a9f3d424634418fcae29768600b2, type: 3}
-  - name: Wenceslavo Gonzalez
-    description: "Tiene una perspectiva \xFAnica, le interesa la inteligencia artificial."
-    color: {r: 0.8308282, g: 0.41037422, b: 0.056567073, a: 1}
-    shape: {fileID: 1392021536, guid: 373d0f71951868d4583ae74e6e00fda2, type: 3}
-    face: {fileID: 1338642829, guid: 1050a9f3d424634418fcae29768600b2, type: 3}
-  - name: Jaime Galileo
-    description: "Se comunica con claridad, crea m\xFAsica con sonidos encontrados."
-    color: {r: 0.40190357, g: 0.41919965, b: 0.17151225, a: 1}
-    shape: {fileID: 59418661, guid: 373d0f71951868d4583ae74e6e00fda2, type: 3}
-    face: {fileID: -1411569982, guid: 1050a9f3d424634418fcae29768600b2, type: 3}
-  - name: Rosa Gonzalez
-    description: Suele ser muy curiosa, arma rompecabezas imposibles.
-    color: {r: 0.2722947, g: 0.11736083, b: 0.32016522, a: 1}
-    shape: {fileID: 59418661, guid: 373d0f71951868d4583ae74e6e00fda2, type: 3}
-    face: {fileID: 1338642829, guid: 1050a9f3d424634418fcae29768600b2, type: 3}
-  - name: Marc Mora
-    description: "Una persona muy inteligente, pasa mucho tiempo leyendo ciencia
-      ficci\xF3n."
-    color: {r: 0.19426739, g: 0.3034739, b: 0.40755254, a: 1}
-    shape: {fileID: 1434202843, guid: 373d0f71951868d4583ae74e6e00fda2, type: 3}
-    face: {fileID: 1055334726, guid: 1050a9f3d424634418fcae29768600b2, type: 3}
+  palDataList: []

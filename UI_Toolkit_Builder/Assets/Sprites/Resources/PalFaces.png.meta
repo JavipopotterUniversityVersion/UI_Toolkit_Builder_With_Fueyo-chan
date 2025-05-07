@@ -105,7 +105,7 @@ TextureImporter:
         width: 28
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
         width: 28
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 17
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
         width: 24
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 20
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,6 +197,342 @@ TextureImporter:
       bones: []
       spriteID: 09129151bbcea2145ae55bdd0858c01b
       internalID: -1411569982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 6
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd34380d3571d5b4da1eb02b2f977a67
+      internalID: -1639616433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_8
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 3
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d6fc4a59a14074baf69109c55cce0d
+      internalID: -1908579734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_10
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 4
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ed2e5397b119f48b5c42750cb206d6
+      internalID: 674242883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_14
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 5
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9b1a8d47971b74fa9256d4e7195b0d
+      internalID: -1898649664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e5c19c0339c894eacbae9103d865fe
+      internalID: -519700430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_20
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 7
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0b2a97de3618542b8ad0d854a42fda
+      internalID: -861722729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_21
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 2
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02844df1255d2d44b966c06ebd318a88
+      internalID: -478697786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_22
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 4
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2692fe4ba90a48d43a8d609e1c4b6919
+      internalID: 1352473382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_24
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 4
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c33c2c87f6f9344adf086a70c63a2e
+      internalID: 112352927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_28
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 8
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.48531494, y: 0.8203642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0420f7a077d8e438f2a6fb580ae1b8
+      internalID: -372830952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_29
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 7
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.48623276, y: 0.80986357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177dee80854db2a4cb4c3e347754cc04
+      internalID: 1512066958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_31
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 4
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72331511947fe414a9df1161224b0b2b
+      internalID: 462647538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_35
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 5
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd5881db0b436b4c8a43ec59da85389
+      internalID: -517321021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_36
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 4
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017d67338b1565b45aa5ef871bbb65c7
+      internalID: -2126612680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_6
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 4
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a6c37c994532843b4da452def45b97
+      internalID: -1701842038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalFaces_7
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ea966de1ec68541a2b5a46cd4bc890
+      internalID: 2051909781
       vertices: []
       indices: 
       edges: []
@@ -214,9 +550,43 @@ TextureImporter:
     nameFileIdTable:
       PalFaces_0: 922017102
       PalFaces_1: 1055334726
+      PalFaces_10: 674242883
+      PalFaces_11: -525177666
+      PalFaces_12: -1194522998
+      PalFaces_13: -1528607080
+      PalFaces_14: -1898649664
+      PalFaces_15: -1729167502
+      PalFaces_16: 1310067147
+      PalFaces_17: -519700430
+      PalFaces_18: -2057980501
+      PalFaces_19: -2112378165
       PalFaces_2: 1338642829
+      PalFaces_20: -861722729
+      PalFaces_21: -478697786
+      PalFaces_22: 1352473382
+      PalFaces_23: -2013010553
+      PalFaces_24: 112352927
+      PalFaces_25: 2131317027
+      PalFaces_26: 693405845
+      PalFaces_27: 1920756401
+      PalFaces_28: -372830952
+      PalFaces_29: 1512066958
       PalFaces_3: -1397419737
+      PalFaces_30: -775833410
+      PalFaces_31: 462647538
+      PalFaces_32: -2141748324
+      PalFaces_33: 1234539135
+      PalFaces_34: 383352431
+      PalFaces_35: -517321021
+      PalFaces_36: -2126612680
+      PalFaces_37: 1233816264
+      PalFaces_38: 2020590430
       PalFaces_4: -1411569982
+      PalFaces_5: -1639616433
+      PalFaces_6: -1701842038
+      PalFaces_7: 2051909781
+      PalFaces_8: -1908579734
+      PalFaces_9: 1911031767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

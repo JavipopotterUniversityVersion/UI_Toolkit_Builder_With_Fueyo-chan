@@ -5,9 +5,10 @@ using UnityEngine.UIElements;
 
 public class Gumball_Machine : MonoBehaviour
 {
-    [SerializeField] Pal _palObject;
-    [SerializeField] Transform _gachaPos;
     DocumentsManager _documentsManager;
+    VisualElement _palElement;
+    PalData _lastPalData;
+    [SerializeField] UIDocument _gameViewDocument;
 
     string[] _palNames = new string[] { "Fueyo", "Andy", "Guillermo", "Diego", "Mika", "Chicho", "Hugo", "Marco", "Jordi", "Itadori", "Choso", "Mayte", "Anna", "Mariel", "Muxu", "Alex", "Alec", "David", "Marc", "Carlos", "Joaquín", "Manolo", "Héctor", "Samir", "Federico", "Jaime", "Miguel", "Alejandro", "Carlos León", "León", "María", "Laurentina", "Amiel", "Ariel", "Isabelle", "Cayetano", "Laura", "Eunice", "Cristal", "Berenice", "Gwendolyn", "Wenceslavo", "Martín", "Martina", "Cayetana", "Luis", "Kesia", "Sara", "Luisa", "Lucía", "Andrea", "Marta", "Alejandra", "Inmaculada", "Rosa", "Elsa", "Elena", "María del Mar", "María del Carmen", "María de los Ángeles", "María de la Luz", "María de la Esperanza", "María de la Paz", "María de la Soledad", "María de la Asunción", "María de la Consolación", "María de la Inmaculada Concepción", "María de la Encarnación" };
     string[] _palSurnames = new string[] { "Itadori", "Llinares", "Balatrez", "Robles Durán", "Gonzalez", "Rodríguez", "Sánchez", "García", "", "Rodero", "Gómez", "Fernández", "Salvador", "Tormos", "Estaca", "Montenegro", "Caballero", "Gallardo", "Genaim", "Peinado", "Romero", "León", "Sosa Casasola", "Soto", "Coronado", "Ruíz", "Mora", "Coca", "Valenzuela", "Valor", "Godoy", "Colomina", "Pato", "Villalba", "Torres", "Cervantes", "Van Goh", "Einstein", "Newton", "Galileo", "Copérnico", "Darwin", "Curie", "Tesla", "Hawking", "Feynman", "Bohr", "Pauli", "Heisenberg", "Planck", "Lorentz", "Ohm" };
@@ -86,6 +87,7 @@ public class Gumball_Machine : MonoBehaviour
         _palsFaces = Resources.LoadAll<Sprite>("PalFaces");
     }
 
+
     PalData CreatePalData() {
         PalData newPal = new PalData();
         newPal.name = _palNames[Random.Range(0, _palNames.Length)] + " " + _palSurnames[Random.Range(0, _palSurnames.Length)];
@@ -93,31 +95,31 @@ public class Gumball_Machine : MonoBehaviour
         newPal.shape = _palsShapes[Random.Range(0, _palsShapes.Length)];
         newPal.face = _palsFaces[Random.Range(0, _palsFaces.Length)];
         newPal.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
+        _lastPalData = newPal;
         return newPal;
     }
 
     [ContextMenu("Create Pal")]
     public void CreatePal() {
         PalData newPal = CreatePalData();
-        _palObject.SetPal(newPal);
+        _palElement.style.backgroundImage = new StyleBackground(PalData.GetPalTexture(newPal));
 
         Resources.Load<InventoryData>("Inventory").AddPal(newPal);
     }
 
     IEnumerator PalAnimationRoutine() {
-        _palObject.gameObject.SetActive(true);
-        _palObject.transform.position = _gachaPos.position;
-        _palObject.transform.localScale = Vector3.zero;
-        _palObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        _palElement.style.display = DisplayStyle.Flex;
+        _palElement.style.opacity = 1f;
+
+        _palElement.style.translate = new StyleTranslate(new Translate(0, 15));
+        _palElement.style.scale = new StyleScale(new Scale(new Vector2(0.1f, 0.1f)));
 
         float time = 0.5f;
         float elapsedTime = 0f;
-        Vector3 targetScale = new Vector3(3, 3, 3);
+        Vector3 targetScale = new Vector3(0.7f, 0.7f, 0.7f);
         Vector3 targetPos = Vector3.zero;
 
-        Quaternion targetRotation = Quaternion.Euler(0, 0, 360);
-        
-        _documentsManager.Notify(_palObject.PalData.name, _palObject.PalData.description, () => {
+        _documentsManager.Notify(_lastPalData.name, _lastPalData.description, () => {
             StartCoroutine(SavePalTween());
         });
 
@@ -125,35 +127,39 @@ public class Gumball_Machine : MonoBehaviour
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / time;
 
-            _palObject.transform.localScale = Vector3.Lerp(Vector3.zero, targetScale, t);
-            _palObject.transform.position = Vector3.Lerp(_gachaPos.position, targetPos, t);
-            _palObject.transform.rotation = Quaternion.Slerp(Quaternion.Euler(0, 0, 0), targetRotation, t);
+            _palElement.style.scale = new StyleScale(Vector3.Lerp(Vector3.zero, targetScale, t));
+
+            Vector3 currentPos = Vector3.Lerp(new Vector3(0,15,0), targetPos, t);
+            _palElement.style.translate = new StyleTranslate(new Translate(currentPos.x, currentPos.y));
 
             yield return new WaitForEndOfFrame();
         }
 
-        _palObject.transform.localScale = targetScale;
-        _palObject.transform.position = targetPos;
-        _palObject.transform.rotation = targetRotation;
+        _palElement.style.scale = new StyleScale(new Scale(targetScale));
+        _palElement.style.translate = new StyleTranslate(new Translate(targetPos.x, targetPos.y));
 
         yield return new WaitForSeconds(1f);
     }
 
     IEnumerator SavePalTween() {
-        //Go Up and out of screen
-        float time = 0.5f;
+        const float TIME = 0.5f;
+        float elapsedTime = 0f;
 
-        float targetY = 8;
-        Vector3 targetPos = new Vector3(_palObject.transform.position.x, targetY, _palObject.transform.position.z);
+        const float START_OPACITY = 1f;
+        const float TARGET_OPACITY = 0f;
 
-        for (float elapsedTime = 0; elapsedTime < time; elapsedTime += Time.deltaTime) {
-            float t = elapsedTime / time;
-            _palObject.transform.position = Vector3.Lerp(_palObject.transform.position, targetPos, t);
+
+        while (elapsedTime < TIME) {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / TIME;
+
+            _palElement.style.opacity = Mathf.Lerp(START_OPACITY, TARGET_OPACITY, t);
+
             yield return new WaitForEndOfFrame();
         }
-        print("SavePalTween");
-        _palObject.transform.position = targetPos;
-        _palObject.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
+        _palElement.style.display = DisplayStyle.None;
     }
 
      private void OnEnable() 
@@ -172,5 +178,8 @@ public class Gumball_Machine : MonoBehaviour
         palDex_button.RegisterCallback<ClickEvent>(e => {
             _documentsManager.OpenInventoryDocument();
         });
+
+        _palElement = _gameViewDocument.rootVisualElement.Q("pal");
+        _palElement.style.display = DisplayStyle.None;
      }
 }

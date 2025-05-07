@@ -52,6 +52,9 @@ public class PalData
                             palTex.SetPixel(x + (int)pal.shape.pivot.x - (int)pal.face.textureRect.width/2, y + (int)pal.shape.pivot.y - (int)pal.face.textureRect.height/2, pixelColor);
                         }
                     }
+                    else {
+                        if(j == 0) palTex.SetPixel(x, y, Color.clear);
+                    }
                 }
             }
         }
@@ -70,12 +73,16 @@ public class InventoryData : ScriptableObject
     {
         if (!palDataList.Contains(palData)) palDataList.Add(palData);
         else Debug.LogWarning("PalData already exists in the list.");
+
+        SaveSystem.SaveGame();
     }
 
     public void RemovePal(PalData palData)
     {
         if (palDataList.Contains(palData)) palDataList.Remove(palData);
         else Debug.LogWarning("PalData not found in the list.");
+
+        SaveSystem.SaveGame();
     }
 
     public List<PalData> GetPals() => palDataList;
