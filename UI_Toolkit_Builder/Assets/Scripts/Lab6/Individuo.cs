@@ -6,11 +6,12 @@ using UnityEngine.UIElements;
 
 namespace Lab6_namespace
 {
+    [Serializable]
     public class Individuo
     {
         public event Action Cambio;
 
-        private string nombre;
+        public string nombre;
         public string Nombre
         {
             get { return nombre; }
@@ -24,7 +25,7 @@ namespace Lab6_namespace
             }
         }
 
-        private string apellido;
+        public string apellido;
         public string Apellido
         {
             get { return apellido; }
@@ -38,9 +39,9 @@ namespace Lab6_namespace
             }
         }
 
-        private Background image;
+        public string image;
 
-        public Background Image
+        public string Image
         {
             get { return image; }
             set
@@ -52,7 +53,7 @@ namespace Lab6_namespace
                 }
             }
         }
-        public Individuo(string nombre, string apellido, Background image)
+        public Individuo(string nombre, string apellido, string image)
         {
             this.nombre = nombre;
             this.apellido = apellido;

@@ -19,8 +19,8 @@ namespace Lab6_namespace
 
         public Tarjeta(VisualElement tarjetaRoot, Individuo individuo)
         {
-            tarjetaRoot = tarjetaRoot;
-            miIndividuo = individuo;
+            this.tarjetaRoot = tarjetaRoot;
+            this.miIndividuo = individuo;
 
             nombreLabel = tarjetaRoot.Q<Label>("Nombre");
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
@@ -41,7 +41,7 @@ namespace Lab6_namespace
         {
             nombreLabel.text = miIndividuo.Nombre;
             apellidoLabel.text = miIndividuo.Apellido;
-            imagenVE.style.backgroundImage = miIndividuo.Image;
+            imagenVE.style.backgroundImage = Resources.Load<Texture2D>(miIndividuo.Image);
         }
     }
 }

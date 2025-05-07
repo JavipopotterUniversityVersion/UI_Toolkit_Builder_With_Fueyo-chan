@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -38,6 +39,7 @@ namespace Lab6_namespace
             botonGuardar.RegisterCallback<ClickEvent>(Guardar);
             input_nombre.RegisterCallback<ChangeEvent<string>>(CambioNombre);
             input_apellido.RegisterCallback<ChangeEvent<string>>(CambioApellido);
+            load();
         }
 
         void NuevaTarjeta(ClickEvent evt)
@@ -52,23 +54,18 @@ namespace Lab6_namespace
                 tarjetas_borde_negro();
                 tarjeta_borde_blanco(tarjetaPlantilla);
 
-                Individuo individuo = new Individuo(input_nombre.value, input_apellido.value, selec_foto.resolvedStyle.backgroundImage);
+                Individuo individuo = new Individuo(input_nombre.value, input_apellido.value, selec_foto.resolvedStyle.backgroundImage.ToString());
                 Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
                 individuoSelec = individuo;
 
                 lista_individuos.Add(individuo);
-
-                string listaToJson = JsonHelperIndividuo.ToJson(lista_individuos);
-                Debug.Log(listaToJson);
-
-                List<Individuo> jsonToLista = JsonHelperIndividuo.FromJson<Individuo>(listaToJson);
-                jsonToLista.ForEach(elem =>
-                {
-                    Debug.Log(elem.Nombre + " " + elem.Apellido);
-                });
             }
         }
 
+        void LoadTarjetasGuardadas()
+        {
+            
+        }
         void seleccionTarjeta(ClickEvent e)
         {
             VisualElement miTarjeta = e.target as VisualElement;
@@ -111,7 +108,7 @@ namespace Lab6_namespace
             target.style.borderLeftColor = Color.white;
             if (toggleModificar.value)
             {
-                individuoSelec.Image = target.resolvedStyle.backgroundImage;
+                individuoSelec.Image = target.resolvedStyle.backgroundImage.ToString();
             }
         }
 
@@ -141,7 +138,29 @@ namespace Lab6_namespace
 
         void Guardar(ClickEvent e)
         {
+            string listaToJson = JsonHelperIndividuo.ToJson(lista_individuos);
+            Debug.Log(listaToJson);
+        }
 
+        void load()
+        {
+            //string jsonFile = Resources.Load<string>("save.json");
+            //List<Individuo> jsonToLista = JsonHelperIndividuo.FromJson<Individuo>(jsonFile);
+            //jsonToLista.ForEach(elem =>
+            //{
+            //    VisualTreeAsset plantilla = Resources.Load<VisualTreeAsset>("Lab6_Tarjeta");
+
+            //    VisualElement tarjetaPlantilla = plantilla.Instantiate();
+
+            //    contenedor_dcha.Add(tarjetaPlantilla);
+            //    tarjetas_borde_negro();
+
+            //    Individuo individuo = new Individuo(elem.Nombre, elem.Apellido, elem.Image);
+            //    Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
+            //    individuoSelec = individuo;
+
+            //    lista_individuos.Add(individuo);
+            //});
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Lab6_namespace
         {
             List<Individuo> datos = new List<Individuo>();
 
-            Texture2D texture = Resources.Load<Texture2D>("apple_pie");
+            string texture = "apple_pie";
             Individuo perico = new Individuo(
                 "Perico",
                 "Palotes",
