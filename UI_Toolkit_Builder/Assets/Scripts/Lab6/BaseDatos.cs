@@ -16,6 +16,7 @@ namespace Lab6_namespace
             Texture2D texture = Resources.Load<Texture2D>("apple_pie");
 
             string dataPath = Application.persistentDataPath + Path.DirectorySeparatorChar + "save.json";
+            
             if (File.Exists(dataPath))
             {
                 StreamReader reader = new StreamReader(dataPath);

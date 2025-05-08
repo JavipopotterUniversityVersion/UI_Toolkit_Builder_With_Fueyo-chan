@@ -91,6 +91,7 @@ namespace Lab6_namespace
                 individuoSelec.Apellido = evt.newValue;
             }
         }
+
         void CambioFoto(ClickEvent evt)
         {
             selec_foto.style.borderBottomColor = Color.black;
