@@ -39,25 +39,25 @@ namespace Lab6_namespace
             }
         }
 
-        public Background image;
+        public string imageKey;
 
-        public Background Image
+        public string ImageKey
         {
-            get { return image; }
+            get { return imageKey; }
             set
             {
-                if (value != image)
+                if (value != imageKey)
                 {
-                    image = value;
+                    imageKey = value;
                     Cambio?.Invoke();
                 }
             }
         }
-        public Individuo(string nombre, string apellido, Background image)
+        public Individuo(string nombre, string apellido, string imageKey)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-            this.image = image;
+            this.imageKey = imageKey;
         }
     }
 }

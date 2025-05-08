@@ -18,6 +18,7 @@
                 <ui:VisualElement name="botones" style="flex-grow: 1; flex-direction: row; justify-content: center;">
                     <ui:Button text="Crear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonCrear" />
                     <ui:Button text="Guardar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonGuardar" />
+                    <ui:Button text="Borrar guardados" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonBorrar" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

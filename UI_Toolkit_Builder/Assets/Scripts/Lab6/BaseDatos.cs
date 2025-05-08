@@ -31,7 +31,7 @@ namespace Lab6_namespace
 
                     contenedor_dcha.Add(tarjetaPlantilla);
 
-                    Individuo individuo = new Individuo(elem.Nombre, elem.Apellido, elem.Image);
+                    Individuo individuo = new Individuo(elem.Nombre, elem.Apellido, elem.ImageKey);
                     Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
 
                     datos.Add(individuo);

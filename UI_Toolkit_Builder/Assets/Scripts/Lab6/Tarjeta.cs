@@ -41,7 +41,7 @@ namespace Lab6_namespace
         {
             nombreLabel.text = miIndividuo.Nombre;
             apellidoLabel.text = miIndividuo.Apellido;
-            imagenVE.style.backgroundImage = miIndividuo.Image;
+            imagenVE.style.backgroundImage = Resources.Load<Texture2D>(miIndividuo.ImageKey);
         }
     }
 }
