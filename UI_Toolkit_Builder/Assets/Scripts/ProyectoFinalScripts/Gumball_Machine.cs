@@ -81,10 +81,13 @@ public class Gumball_Machine : MonoBehaviour
     Sprite[] _palsShapes;
     Sprite[] _palsFaces;
 
+    InventoryData _inventory;
+
     private void Awake() {
         _documentsManager = GetComponentInParent<DocumentsManager>();
         _palsShapes = Resources.LoadAll<Sprite>("Pals");
         _palsFaces = Resources.LoadAll<Sprite>("PalFaces");
+        _inventory = Resources.Load<InventoryData>("Inventory");
     }
 
 
@@ -104,7 +107,7 @@ public class Gumball_Machine : MonoBehaviour
         PalData newPal = CreatePalData();
         _palElement.style.backgroundImage = new StyleBackground(PalData.GetPalTexture(newPal));
 
-        Resources.Load<InventoryData>("Inventory").AddPal(newPal);
+        _inventory.AddPal(newPal);
     }
 
     IEnumerator PalAnimationRoutine() {
@@ -116,7 +119,7 @@ public class Gumball_Machine : MonoBehaviour
 
         float time = 0.5f;
         float elapsedTime = 0f;
-        Vector3 targetScale = new Vector3(0.7f, 0.7f, 0.7f);
+        Vector2 targetScale = new Vector3(0.7f, 0.7f);
         Vector3 targetPos = Vector3.zero;
 
         _documentsManager.Notify(_lastPalData.name, _lastPalData.description, () => {
@@ -169,6 +172,17 @@ public class Gumball_Machine : MonoBehaviour
 
         VisualElement buy_button = root.Q<VisualElement>("Buy");
         buy_button.RegisterCallback<ClickEvent>(e => {
+            if(_documentsManager.GetMoney() < 1) {
+                _documentsManager.Notify("No tienes dinero", "No puedes comprar un Pal sin dinero.");
+                return;
+            }
+
+            if(_inventory.PalsCount >= 16) {
+                _documentsManager.Notify("No puedes tener más Pals", "No puedes tener más de 12 Pals en tu inventario.");
+                return;
+            }
+
+            _documentsManager.RemoveMoney(1);
             CreatePal();
             StopAllCoroutines();
             StartCoroutine(PalAnimationRoutine());

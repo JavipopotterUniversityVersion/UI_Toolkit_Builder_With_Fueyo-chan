@@ -12,6 +12,27 @@ public class SaveSystem : MonoBehaviour
     private void OnApplicationQuit() {
         SaveGame();
     }
+
+    public static void SaveInt(string key, int value)
+    {
+        string persistentDataPath = Application.persistentDataPath + Path.DirectorySeparatorChar + key + ".txt";
+        StreamWriter writer = new StreamWriter(persistentDataPath);
+        writer.Write(value.ToString());
+        writer.Close();
+    }
+
+    public static int LoadInt(string key, int defaultValue = 0)
+    {
+        string persistentDataPath = Application.persistentDataPath + Path.DirectorySeparatorChar + key + ".txt";
+        if (File.Exists(persistentDataPath))
+        {
+            StreamReader reader = new StreamReader(persistentDataPath);
+            string value = reader.ReadToEnd();
+            reader.Close();
+            return int.Parse(value);
+        }
+        return defaultValue;
+    }
     
     public static void SaveGame()
     {

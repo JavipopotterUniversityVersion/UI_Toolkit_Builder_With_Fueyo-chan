@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label tabindex="-1" text="0$" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Money" class="money" style="-unity-text-align: upper-right;" />
+</ui:UXML>

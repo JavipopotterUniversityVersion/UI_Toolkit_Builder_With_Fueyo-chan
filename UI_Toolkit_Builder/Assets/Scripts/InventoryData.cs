@@ -68,6 +68,7 @@ public class PalData
 public class InventoryData : ScriptableObject
 {
     [SerializeField] List<PalData> palDataList = new List<PalData>();
+    public int PalsCount => palDataList.Count;
 
     public void AddPal(PalData palData)
     {

@@ -1,5 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Money" src="project://database/Assets/UI/ProyectoFinal/Money.uxml?fileID=9197481963319205126&amp;guid=e11e646f23123c048b6501b11c98116c&amp;type=3#Money" />
     <Style src="project://database/Assets/UI/ProyectoFinal/game.uss?fileID=7433441132597879392&amp;guid=9bc5088a97cd8ac4dbf636312d9b5ac1&amp;type=3#game" />
+    <ui:Instance template="Money" name="Money" />
     <ui:VisualElement name="Gumball" style="flex-grow: 1; background-image: resource(&apos;Gumball&apos;); -unity-background-scale-mode: scale-to-fit; margin-top: 51px; margin-right: 51px; margin-bottom: 51px; margin-left: 51px;" />
     <ui:Button text="Buy" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Buy" class="button" />
     <ui:Button text="PalDex" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PalDex" class="button" />
