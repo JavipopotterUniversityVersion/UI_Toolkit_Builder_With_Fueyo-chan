@@ -39,9 +39,9 @@ namespace Lab6_namespace
             }
         }
 
-        public string image;
+        public Background image;
 
-        public string Image
+        public Background Image
         {
             get { return image; }
             set
@@ -53,7 +53,7 @@ namespace Lab6_namespace
                 }
             }
         }
-        public Individuo(string nombre, string apellido, string image)
+        public Individuo(string nombre, string apellido, Background image)
         {
             this.nombre = nombre;
             this.apellido = apellido;

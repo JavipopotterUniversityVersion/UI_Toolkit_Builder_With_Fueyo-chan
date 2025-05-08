@@ -2,45 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Lab6_namespace;
+using UnityEngine.UIElements;
+using System.IO;
 
 namespace Lab6_namespace
 {
     public class BaseDatos
     {
-        public static List<Individuo> getData()
+        public List<Individuo> getData(VisualElement contenedor_dcha)
         {
             List<Individuo> datos = new List<Individuo>();
 
-            string texture = "apple_pie";
-            Individuo perico = new Individuo(
-                "Perico",
-                "Palotes",
-                texture
-            );
+            Texture2D texture = Resources.Load<Texture2D>("apple_pie");
 
-            Individuo tornasol = new Individuo(
-                "Tornasol",
-                "Tornasolado",
-                texture
-            );
+            string dataPath = Application.persistentDataPath + Path.DirectorySeparatorChar + "save.json";
+            if (File.Exists(dataPath))
+            {
+                StreamReader reader = new StreamReader(dataPath);
+                string jsonFile = reader.ReadToEnd();
+                List<Individuo> jsonToLista = JsonHelperIndividuo.FromJson<Individuo>(jsonFile);
 
-            Individuo luca = new Individuo(
-                "Luca",
-                "Lucatell",
-                texture
-            );
+                jsonToLista.ForEach(elem =>
+                {
+                    VisualTreeAsset plantilla = Resources.Load<VisualTreeAsset>("Lab6_Tarjeta");
 
-            Individuo ivan = new Individuo(
-                "Ivan",
-                "Ivanovich",
-                texture
-            ); ;
+                    VisualElement tarjetaPlantilla = plantilla.Instantiate();
 
-            datos.Add(perico);
-            datos.Add(tornasol);
-            datos.Add(luca);
-            datos.Add(ivan);
+                    contenedor_dcha.Add(tarjetaPlantilla);
 
+                    Individuo individuo = new Individuo(elem.Nombre, elem.Apellido, elem.Image);
+                    Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
+
+                    datos.Add(individuo);
+                });
+            }
             return datos;
         }
     }
